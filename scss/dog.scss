@@ -567,7 +567,7 @@ main {
                             top: 50%;
                             left: 50%;
                             transform: translate(-50%, -50%);
-                            z-index: 1000;
+                            z-index: 1;
                             width: 100%;
 
 
@@ -576,6 +576,10 @@ main {
                                 width: 100%;
                                 // height: 100%;
                             }
+                        }
+
+                        .mask_border2 {
+                            display: none;
                         }
 
                         .direction {
@@ -593,28 +597,34 @@ main {
                                 height: 100%;
                                 // background-image: url(../picture/banner2.jpg);
                                 background-size: cover;
-                                background-position: center;
+                                // background-position: center;
+
                                 opacity: 0;
                                 transition: 1s;
                             }
 
                             .dogg_1 {
+                                background-position: top;
                                 background-image: url(../picture/member/dogg_1.jpg);
                             }
 
                             .dogg_2 {
+                                background-position: center;
                                 background-image: url(../picture/member/dogg_2.jpg);
                             }
 
                             .dogg_3 {
+                                background-position: center;
                                 background-image: url(../picture/member/dogg_3.jpg);
                             }
 
                             .dogg_4 {
+                                background-position: top;
                                 background-image: url(../picture/member/dogg_4.jpg);
                             }
 
                             .dogg_5 {
+                                background-position: top;
                                 background-image: url(../picture/member/dogg_5.jpg);
                             }
 
@@ -1010,6 +1020,9 @@ main {
             height: 80%;
             position: relative;
             overflow: hidden;
+            background-image: url(../picture/灰熊雞腿.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
 
             .img_box_mask {
                 // content: "";
@@ -1022,6 +1035,7 @@ main {
                 z-index: 1;
                 transition: all 0.6s cubic-bezier(0.5, 0, 0.3, 1);
                 transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+
             }
 
             .on {
@@ -1030,11 +1044,11 @@ main {
                 transition: 1.5s;
             }
 
-            img {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-            }
+            // img {
+            //     position: absolute;
+            //     width: 100%;
+            //     height: 100%;
+            // }
 
         }
 
@@ -1134,7 +1148,7 @@ main {
 
                 .cardBox {
                     display: flex;
-                    
+
                     justify-content: space-between;
                     padding-top: 38px;
                     // overflow: hidden;
@@ -1718,6 +1732,7 @@ footer {
             #img_box {
                 width: 100%;
                 height: 100%;
+
             }
 
             .menu_right {
@@ -1770,8 +1785,23 @@ footer {
                         justify-content: space-around;
 
                         .mask {
-                            width: 93%;
+                            width: 100%;
                             height: 100%;
+
+                            .mask_border {
+                                display: none;
+                            }
+
+                            .mask_border2 {
+                                display: block;
+                                position: absolute;
+
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                z-index: 1;
+                                width: 100%;
+                            }
                         }
 
                         .dog {
@@ -1825,17 +1855,9 @@ footer {
                         }
                     }
                 }
-
             }
         }
-
-
-
     }
-
-
-
-
 }
 
 
@@ -1888,6 +1910,9 @@ footer {
                 }
             }
         }
+
+        // 1100菜單
+
 
         #news {
             height: 2100px;
@@ -2106,11 +2131,6 @@ footer {
 
             .menu_main {
                 display: none;
-
-
-
-
-
             }
         }
     }
@@ -2132,6 +2152,13 @@ footer {
                     .store_introduction_cute {
                         width: 400px;
                         bottom: -55px;
+                    }
+
+                    @keyframes doggo {
+                        100% {
+                            right: calc(50% - 200px);
+    
+                        }
                     }
 
                 }
@@ -2163,6 +2190,7 @@ footer {
                             right: 35%;
                             bottom: 45px;
                         }
+
                     }
 
                     .row {
@@ -2194,12 +2222,11 @@ footer {
 
         #news {
             height: 1850px;
-            .container{
-                .news_show{
-                    .cardBox{
-                        .card1{
 
-                        }
+            .container {
+                .news_show {
+                    .cardBox {
+                        .card1 {}
                     }
                 }
             }
@@ -2241,6 +2268,31 @@ footer {
 
         }
     }
+}
+@media(max-width: 762px) {
+   main{
+       #news{
+           .news_propaganda{
+               .con2{
+                   
+                   .propaganda{
+                       .propaganda_PM{
+                           .propaganda_main{
+                               .propaganda_title{
+                                   font-size: 26px;
+                               }
+                               bottom: 40px;
+                            //    right: 1%;
+                           }
+                       }
+                   }
+               }
+                .grass{
+                    height: 300px;
+                } 
+           }
+       }
+   }   
 }
 
 @media (max-width:687px) {
@@ -2304,6 +2356,30 @@ footer {
 
 }
 
+@media (max-width:650px) {
+    main {
+
+        #news {
+            height: 3400px;
+            .news_propaganda {
+                .con2{
+                    .propaganda{
+                        .propaganda_PM{
+                            .propaganda_picture{
+                                left: -15px;
+                            }
+                            .propaganda_main{
+                                right: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}
 @media (max-width:610px) {
     main {
         #members_introduction {
@@ -2336,40 +2412,56 @@ footer {
                         }
                     }
 
-                    // .row {
 
-                    //     .mask {
-                    //         height: 50%;
-                    //     }
-
-                    //     .dog {
-                    //         .dog_img {
-                    //             height: 400px;
-
-                    //             .dog_img_box {}
-                    //         }
-                    //     }
-
-                    //     .btn-challenge {
-                    //         bottom: 100px;
-                    //     }
-                    // }
                 }
+
+                // 610news
             }
         }
+
+
         #menu {
             height: 950px;
-            #img_box{
+
+            #img_box {
                 height: 55%;
             }
-            .menu_right{
+
+            .menu_right {
                 padding: 10px 10px;
-                
+
             }
+
             .menu_bg_img {
                 width: 300px;
             }
 
+        }
+
+        #news {
+            height: 3400px;
+            .news_propaganda {
+                .con2{
+                    .propaganda{
+                        .propaganda_PM{
+                            .propaganda_main{
+                                bottom: 35px;
+                                right: 10px;
+                                .propaganda_title{
+                                    font-size: 22px;
+                                    margin: 15px 0px;
+                                }
+                                p{
+                                    letter-spacing:5px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .grass {
+                    height: 300px;
+                }
+            }
         }
 
     }
@@ -2385,30 +2477,11 @@ footer {
 
                 .members_introduction_main {
                     .members_introduction_main_title {
-                        p {
-                            font-size: 28px;
-                        }
+
 
                     }
 
-                    // .row {
-
-                    //     .mask {
-                    //         height: 50%;
-                    //     }
-
-                    //     .dog {
-                    //         .dog_img {
-                    //             height: 400px;
-
-                    //             .dog_img_box {}
-                    //         }
-                    //     }
-
-                    //     .btn-challenge {
-                    //         bottom: 100px;
-                    //     }
-                    // }
+                    
                 }
             }
         }
@@ -2416,29 +2489,12 @@ footer {
     }
 }
 
-@media (max-width:376px) {
+@media (max-width:375px) {
     main {
         #store_introduction {
             .container {
                 .store_introduction_top {
 
-                    // .store_introduction_bg1 {
-                    //     .store_introduction_word {
-                    //         padding: 90px 0 40px;
-
-                    //         p {
-                    //             letter-spacing: 3px;
-                    //             padding: 0px;
-                    //         }
-                    //     }
-                    // }
-
-                    // .store_introduction_bg2 {
-                    //     .store_introduction_youtube {
-                    //         width: 500px;
-                    //         height: 350px;
-                    //     }
-                    // }
                 }
 
             }

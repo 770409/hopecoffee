@@ -556,12 +556,16 @@ main #members_introduction .container .members_introduction_main .row .mask .mas
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  z-index: 1000;
+  z-index: 1;
   width: 100%;
 }
 
 main #members_introduction .container .members_introduction_main .row .mask .mask_border img {
   width: 100%;
+}
+
+main #members_introduction .container .members_introduction_main .row .mask .mask_border2 {
+  display: none;
 }
 
 main #members_introduction .container .members_introduction_main .row .mask .direction {
@@ -578,29 +582,33 @@ main #members_introduction .container .members_introduction_main .row .mask .dir
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-position: center;
   opacity: 0;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
 main #members_introduction .container .members_introduction_main .row .mask .direction .dogg_1 {
+  background-position: top;
   background-image: url(../picture/member/dogg_1.jpg);
 }
 
 main #members_introduction .container .members_introduction_main .row .mask .direction .dogg_2 {
+  background-position: center;
   background-image: url(../picture/member/dogg_2.jpg);
 }
 
 main #members_introduction .container .members_introduction_main .row .mask .direction .dogg_3 {
+  background-position: center;
   background-image: url(../picture/member/dogg_3.jpg);
 }
 
 main #members_introduction .container .members_introduction_main .row .mask .direction .dogg_4 {
+  background-position: top;
   background-image: url(../picture/member/dogg_4.jpg);
 }
 
 main #members_introduction .container .members_introduction_main .row .mask .direction .dogg_5 {
+  background-position: top;
   background-image: url(../picture/member/dogg_5.jpg);
 }
 
@@ -1603,6 +1611,9 @@ main #menu #img_box {
   height: 80%;
   position: relative;
   overflow: hidden;
+  background-image: url(../picture/灰熊雞腿.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 main #menu #img_box .img_box_mask {
@@ -1623,12 +1634,6 @@ main #menu #img_box .on {
   right: -100%;
   -webkit-transition: 1.5s;
   transition: 1.5s;
-}
-
-main #menu #img_box img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
 }
 
 main #menu .menu_right {
@@ -2301,8 +2306,21 @@ footer .Copyright {
         justify-content: space-around;
   }
   main #members_introduction .container .members_introduction_main .row .mask {
-    width: 93%;
+    width: 100%;
     height: 100%;
+  }
+  main #members_introduction .container .members_introduction_main .row .mask .mask_border {
+    display: none;
+  }
+  main #members_introduction .container .members_introduction_main .row .mask .mask_border2 {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 100%;
   }
   main #members_introduction .container .members_introduction_main .row .dog {
     width: 100%;
@@ -2464,6 +2482,16 @@ footer .Copyright {
     width: 400px;
     bottom: -55px;
   }
+  @-webkit-keyframes doggo {
+    100% {
+      right: calc(50% - 200px);
+    }
+  }
+  @keyframes doggo {
+    100% {
+      right: calc(50% - 200px);
+    }
+  }
   main #members_introduction .container {
     height: 1000px;
   }
@@ -2513,6 +2541,18 @@ footer .Copyright {
   }
 }
 
+@media (max-width: 762px) {
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main {
+    bottom: 40px;
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main .propaganda_title {
+    font-size: 26px;
+  }
+  main #news .news_propaganda .grass {
+    height: 300px;
+  }
+}
+
 @media (max-width: 687px) {
   main #members_introduction .container {
     height: 1000px;
@@ -2535,6 +2575,18 @@ footer .Copyright {
   }
   main #news .container .news_show .cardBox .card1 {
     width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  main #news {
+    height: 3400px;
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_picture {
+    left: -15px;
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main {
+    right: 0px;
   }
 }
 
@@ -2572,14 +2624,28 @@ footer .Copyright {
   main #menu .menu_bg_img {
     width: 300px;
   }
+  main #news {
+    height: 3400px;
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main {
+    bottom: 35px;
+    right: 10px;
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main .propaganda_title {
+    font-size: 22px;
+    margin: 15px 0px;
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main p {
+    letter-spacing: 5px;
+  }
+  main #news .news_propaganda .grass {
+    height: 300px;
+  }
 }
 
 @media (max-width: 425px) {
   main #members_introduction .container {
     height: 1000px;
-  }
-  main #members_introduction .container .members_introduction_main .members_introduction_main_title p {
-    font-size: 28px;
   }
 }
 /*# sourceMappingURL=dog.css.map */
