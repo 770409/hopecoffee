@@ -2267,8 +2267,22 @@ footer {
             }
 
         }
+        #contact_us{
+            .container{
+                width: 100%;
+                .information_left{
+                    width: 80%;
+                    .contact_us_information{
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
 }
+
+
+
 @media(max-width: 762px) {
    main{
        #news{
@@ -2350,6 +2364,23 @@ footer {
 
 
 
+        }
+
+        #contact_us{
+            .container{
+                .information_map{
+                    .map_box{
+                        .map_img{
+                            width: 350px;
+                            height: 200px;
+                        }
+                        .maps{
+                            width: 400px;
+                            height: 350px;
+                        }
+                    }
+                }
+            }
         }
 
     }

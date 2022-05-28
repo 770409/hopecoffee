@@ -2539,6 +2539,15 @@ footer .Copyright {
   main #menu .menu_bg_img {
     width: 300px;
   }
+  main #contact_us .container {
+    width: 100%;
+  }
+  main #contact_us .container .information_left {
+    width: 80%;
+  }
+  main #contact_us .container .information_left .contact_us_information {
+    width: 100%;
+  }
 }
 
 @media (max-width: 762px) {
@@ -2575,6 +2584,14 @@ footer .Copyright {
   }
   main #news .container .news_show .cardBox .card1 {
     width: 100%;
+  }
+  main #contact_us .container .information_map .map_box .map_img {
+    width: 350px;
+    height: 200px;
+  }
+  main #contact_us .container .information_map .map_box .maps {
+    width: 400px;
+    height: 350px;
   }
 }
 
