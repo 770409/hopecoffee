@@ -2585,6 +2585,12 @@ footer .Copyright {
   main #news .container .news_show .cardBox .card1 {
     width: 100%;
   }
+  main #contact_us {
+    height: 2050px;
+  }
+  main #contact_us .container .information_left .contact_us_information .information_title .information_picture {
+    top: 0px;
+  }
   main #contact_us .container .information_map .map_box .map_img {
     width: 350px;
     height: 200px;
@@ -2604,6 +2610,28 @@ footer .Copyright {
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main {
     right: 0px;
+  }
+  main #contact_us .container .information_left .contact_us_information {
+    height: 725px;
+  }
+  main #contact_us .container .information_left .contact_us_information .information_title .information_picture {
+    top: 0px;
+  }
+  main #contact_us .container .information_left .contact_us_information .information_title h1 {
+    font-size: 40px;
+  }
+  main #contact_us .container .information_left .contact_us_information .contact_us_information_box img {
+    margin-top: 25px;
+    width: 290px;
+    height: 125px;
+  }
+  main #contact_us .container .information_map .map_box .map_img {
+    width: 350px;
+    height: 200px;
+  }
+  main #contact_us .container .information_map .map_box .maps {
+    width: 400px;
+    height: 350px;
   }
 }
 

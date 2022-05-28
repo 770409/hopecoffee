@@ -2157,7 +2157,7 @@ footer {
                     @keyframes doggo {
                         100% {
                             right: calc(50% - 200px);
-    
+
                         }
                     }
 
@@ -2267,12 +2267,15 @@ footer {
             }
 
         }
-        #contact_us{
-            .container{
+
+        #contact_us {
+            .container {
                 width: 100%;
-                .information_left{
+
+                .information_left {
                     width: 80%;
-                    .contact_us_information{
+
+                    .contact_us_information {
                         width: 100%;
                     }
                 }
@@ -2284,29 +2287,31 @@ footer {
 
 
 @media(max-width: 762px) {
-   main{
-       #news{
-           .news_propaganda{
-               .con2{
-                   
-                   .propaganda{
-                       .propaganda_PM{
-                           .propaganda_main{
-                               .propaganda_title{
-                                   font-size: 26px;
-                               }
-                               bottom: 40px;
-                            //    right: 1%;
-                           }
-                       }
-                   }
-               }
-                .grass{
+    main {
+        #news {
+            .news_propaganda {
+                .con2 {
+
+                    .propaganda {
+                        .propaganda_PM {
+                            .propaganda_main {
+                                .propaganda_title {
+                                    font-size: 26px;
+                                }
+
+                                bottom: 40px;
+                                //    right: 1%;
+                            }
+                        }
+                    }
+                }
+
+                .grass {
                     height: 300px;
-                } 
-           }
-       }
-   }   
+                }
+            }
+        }
+    }
 }
 
 @media (max-width:687px) {
@@ -2366,15 +2371,29 @@ footer {
 
         }
 
-        #contact_us{
-            .container{
-                .information_map{
-                    .map_box{
-                        .map_img{
+        #contact_us {
+            height: 2050px;
+            .container {
+                .information_left {
+                    .contact_us_information {
+                        .information_title {
+                            .information_picture {
+                                top: 0px;
+                            }
+                        }
+                    }
+                }
+
+
+
+                .information_map {
+                    .map_box {
+                        .map_img {
                             width: 350px;
                             height: 200px;
                         }
-                        .maps{
+
+                        .maps {
                             width: 400px;
                             height: 350px;
                         }
@@ -2392,14 +2411,16 @@ footer {
 
         #news {
             height: 3400px;
+
             .news_propaganda {
-                .con2{
-                    .propaganda{
-                        .propaganda_PM{
-                            .propaganda_picture{
+                .con2 {
+                    .propaganda {
+                        .propaganda_PM {
+                            .propaganda_picture {
                                 left: -15px;
                             }
-                            .propaganda_main{
+
+                            .propaganda_main {
                                 right: 0px;
                             }
                         }
@@ -2408,9 +2429,51 @@ footer {
             }
         }
 
+        #contact_us {
+            .container {
+                .information_left {
+                    .contact_us_information {
+                        height: 725px;
+                        .information_title {
+                            .information_picture {
+                                top: 0px;
+                            }
+                            h1{
+                                font-size: 40px;
+                            }
+                        }
+
+                        .contact_us_information_box{
+                            img{
+                                margin-top: 25px;
+                                width: 290px;
+                                height: 125px;
+                            }
+                        }
+                    }
+                }
+
+
+
+                .information_map {
+                    .map_box {
+                        .map_img {
+                            width: 350px;
+                            height: 200px;
+                        }
+
+                        .maps {
+                            width: 400px;
+                            height: 350px;
+                        }
+                    }
+                }
+            }
+        }
     }
 
 }
+
 @media (max-width:610px) {
     main {
         #members_introduction {
@@ -2471,24 +2534,28 @@ footer {
 
         #news {
             height: 3400px;
+
             .news_propaganda {
-                .con2{
-                    .propaganda{
-                        .propaganda_PM{
-                            .propaganda_main{
+                .con2 {
+                    .propaganda {
+                        .propaganda_PM {
+                            .propaganda_main {
                                 bottom: 35px;
                                 right: 10px;
-                                .propaganda_title{
+
+                                .propaganda_title {
                                     font-size: 22px;
                                     margin: 15px 0px;
                                 }
-                                p{
-                                    letter-spacing:5px;
+
+                                p {
+                                    letter-spacing: 5px;
                                 }
                             }
                         }
                     }
                 }
+
                 .grass {
                     height: 300px;
                 }
@@ -2507,12 +2574,9 @@ footer {
                 height: 1000px;
 
                 .members_introduction_main {
-                    .members_introduction_main_title {
+                    .members_introduction_main_title {}
 
 
-                    }
-
-                    
                 }
             }
         }
@@ -2524,9 +2588,7 @@ footer {
     main {
         #store_introduction {
             .container {
-                .store_introduction_top {
-
-                }
+                .store_introduction_top {}
 
             }
         }
