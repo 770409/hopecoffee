@@ -424,7 +424,7 @@ main {
 
                     .store_introduction_word {
                         width: 100%;
-                        padding: 130px 0 40px;
+                        padding: 130px 40px 40px;
                         margin: 0 auto;
 
                         h1 {
@@ -453,7 +453,7 @@ main {
                     position: relative;
 
                     .store_introduction_youtube {
-                        width: 600px;
+                        width: 500px;
                         height: 350px;
                         position: absolute;
                         top: 35%;
@@ -479,7 +479,7 @@ main {
                     position: absolute;
                     bottom: -80px;
 
-                    right: -100%;
+                    right: -600px;
 
                     // transform: translateX(-50%);
                     z-index: 2;
@@ -549,8 +549,9 @@ main {
                     width: 100%;
                     height: 100%;
                     display: flex;
-                    // justify-content: space-between;
+                    justify-content: space-between;
                     position: relative;
+
 
                     .mask {
                         width: 70%;
@@ -657,7 +658,7 @@ main {
 
 
                     .dog {
-                        width: 30%;
+                        width: 25%;
                         // width: 100%;
                         position: relative;
                         height: 75%;
@@ -1236,8 +1237,8 @@ main {
                         .propaganda_picture {
                             width: 30%;
                             position: absolute;
-                            bottom: -150px;
-                            left: 12%;
+                            bottom: -130px;
+                            left: 10%;
                             z-index: 5;
                         }
 
@@ -1493,7 +1494,6 @@ footer {
         padding: 0 20px 20px 0;
         font-size: 14px;
     }
-
 }
 
 // =============
@@ -1517,6 +1517,7 @@ footer {
 
                     .store_introduction_bg2 {
                         .store_introduction_youtube {
+                            top: 30%;
                             width: 500px;
                             height: 350px;
                         }
@@ -1525,7 +1526,17 @@ footer {
             }
         }
 
-
+        #members_introduction{
+            .container{
+                .members_introduction_main{
+                    .row{
+                        .dog{
+                            width: 27.5%;
+                        }
+                    }
+                }
+            }
+        }
         #menu {
 
             // .menu_right {}
@@ -1594,6 +1605,7 @@ footer {
                 }
 
                 .information_right {
+                    margin-top: 70px;
                     height: 500px;
 
                     justify-content: center;
@@ -1613,42 +1625,42 @@ footer {
     main {
 
         #store_introduction {
-            height: 1770px;
+            // height: 1070px;
 
             .container {
                 height: 100%;
 
                 .store_introduction_top {
-                    flex-direction: column;
+                    // flex-direction: column;
                     width: 100%;
-                    justify-content: none;
-                    align-items: center;
+                    // justify-content: none;
+                    // align-items: center;
 
 
                     .store_introduction_bg1 {
-                        background-image: url(../picture/store_introduction/上.svg);
-                        width: 100%;
-                        height: 700px;
+                        // background-image: url(../picture/store_introduction/上.svg);
+                        // width: 100%;
+                        // height: 700px;
 
-                        .store_introduction_word {
-                            width: 70%;
-                            padding: 180px 15px 0px;
+                        // .store_introduction_word {
+                        //     width: 70%;
+                        //     padding: 180px 15px 0px;
 
 
-                        }
+                        // }
                     }
 
                     .store_introduction_bg2 {
 
-                        background-image: url(../picture/store_introduction/下.svg);
-                        width: 100%;
-                        height: 700px;
+                        // background-image: url(../picture/store_introduction/下.svg);
+                        // width: 100%;
+                        // height: 700px;
 
                         .store_introduction_youtube {
-                            width: 600px;
+                            width: 500px;
                             height: 350px;
-                            top: 15%;
-                            left: 50%;
+                            top: 30%;
+                            // left: 50%;
                         }
                     }
                 }
@@ -1673,7 +1685,7 @@ footer {
 
                         .mask {
                             width: 93%;
-                            height: 107%;
+                            height: 100%;
                         }
 
                         .dog {
@@ -1766,7 +1778,57 @@ footer {
 
     // 1280成員
     main {
+        #store_introduction {
+            // height: 1070px;
 
+            .container {
+                height: 100%;
+
+                .store_introduction_top {
+                    // flex-direction: column;
+                    width: 100%;
+                    // justify-content: none;
+                    // align-items: center;
+
+
+                    .store_introduction_bg1 {
+                        // background-image: url(../picture/store_introduction/上.svg);
+                        // width: 100%;
+                        // height: 700px;
+
+                        // .store_introduction_word {
+                        //     width: 70%;
+                        //     padding: 180px 15px 0px;
+
+
+                        // }
+                        .store_introduction_word{
+                            h1{
+                                margin: 30px 0 25px 0px;
+                            }
+                            p{
+                                letter-spacing: 0px;
+                            }
+                        }
+                    }
+
+                    .store_introduction_bg2 {
+
+                        // background-image: url(../picture/store_introduction/下.svg);
+                        // width: 100%;
+                        // height: 700px;
+
+                        .store_introduction_youtube {
+                            width: 450px;
+                            height: 300px;
+                            top: 33%;
+                            // left: 50%;
+                        }
+                    }
+                }
+            }
+
+        }
         #members_introduction {
             .container {
                 height: 1300px;
@@ -1860,6 +1922,58 @@ footer {
     }
 }
 
+@media (max-width: 1200px) {
+    main{
+        #store_introduction {
+            height: 1770px;
+
+            .container {
+                height: 100%;
+
+                .store_introduction_top {
+                    flex-direction: column;
+                    width: 100%;
+                    justify-content: none;
+                    align-items: center;
+
+
+                    .store_introduction_bg1 {
+                        background-image: url(../picture/store_introduction/上.svg);
+                        width: 100%;
+                        height: 700px;
+
+                        .store_introduction_word {
+                            width: 70%;
+                            padding: 180px 15px 0px;
+                            h1{
+                                margin: -1px 0 40px 0px;
+                            }
+                            p{
+                                letter-spacing: 10px;
+                            }
+
+                        }
+                    }
+
+                    .store_introduction_bg2 {
+
+                        background-image: url(../picture/store_introduction/下.svg);
+                        width: 100%;
+                        height: 700px;
+
+                        .store_introduction_youtube {
+                            width: 600px;
+                            height: 400px;
+                            top: 10%;
+                            left: 50%;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
 
 @media (max-width: 1100px) {
     nav {
@@ -1877,10 +1991,10 @@ footer {
 
                     .store_introduction_bg1 {
                         .store_introduction_word {
-                            padding: 90px 0 40px;
+                            // padding: 90px 0 40px;
 
                             p {
-                                letter-spacing: 3px;
+                                // letter-spacing: 3px;
                                 padding: 0px;
                             }
                         }
@@ -1888,8 +2002,8 @@ footer {
 
                     .store_introduction_bg2 {
                         .store_introduction_youtube {
-                            width: 500px;
-                            height: 350px;
+                            width: 600px;
+                            height: 400px;
                         }
                     }
                 }
@@ -1961,7 +2075,7 @@ footer {
                     .store_introduction_bg2 {
                         .store_introduction_youtube {
                             width: 500px;
-                            height: 350px;
+                            height: 400px;
                         }
                     }
                 }
@@ -2288,6 +2402,20 @@ footer {
 
 @media(max-width: 762px) {
     main {
+        #store_introduction{
+            .container{
+                .store_introduction_top{
+                    padding-top: 30px;
+                    .store_introduction_bg2{
+                        .store_introduction_youtube{
+
+                        }
+                    }
+                }
+            }
+        }
+
+
         #news {
             .news_propaganda {
                 .con2 {
@@ -2316,6 +2444,33 @@ footer {
 
 @media (max-width:687px) {
     main {
+        #store_introduction{
+            height: 1450px;
+            .container{
+                .store_introduction_top{
+                    .store_introduction_bg1{
+                        .store_introduction_word{
+                            h1{
+                                margin: 30px 0 25px 0;
+                                font-size: 40px;
+                            }
+                            p{
+                                letter-spacing: 2px;
+                            }
+                        }
+                    }
+                    .store_introduction_bg2{
+                        height: 570px;
+                        .store_introduction_youtube{
+                            top: 7%;
+                            width: 455px;
+                            height: 320px;
+                        }
+                    }
+                }
+            }
+        }
+
         #members_introduction {
 
             .container {
@@ -2408,7 +2563,35 @@ footer {
 
 @media (max-width:650px) {
     main {
-
+        #store_introduction{
+            height: 1300px;
+            .container{
+                .store_introduction_top{
+                    padding: 0px;
+                    .store_introduction_bg1{
+                        height: 640px;
+                        .store_introduction_word {
+                            h1{
+                                margin: 40px 0px 15px 0px;
+                                font-size: 36px;
+                            }
+                            p{
+                                // letter-spacing: 0px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    .store_introduction_bg2{
+                        height: 500px;
+                        .store_introduction_youtube{
+                            top: 7%;
+                            width: 400px;
+                            height: 290px;
+                        }
+                    }
+                }
+            }
+        }
         #news {
             height: 3400px;
 
@@ -2476,6 +2659,37 @@ footer {
 
 @media (max-width:610px) {
     main {
+        #store_introduction{
+            height: 1300px;
+            .container{
+                .store_introduction_top{
+                    padding: 0px;
+                    .store_introduction_bg1{
+                        height: 640px;
+                        .store_introduction_word {
+                            h1{
+                                margin: 40px 0px 15px 0px;
+                                font-size: 36px;
+                            }
+                            p{
+                                letter-spacing: 0px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    .store_introduction_bg2{
+                        height: 500px;
+                        .store_introduction_youtube{
+                            top: 7%;
+                            width: 400px;
+                            height: 290px;
+                        }
+                    }
+                }
+            }
+        }
+
+
         #members_introduction {
 
             .container {
@@ -2566,6 +2780,383 @@ footer {
 
 }
 
+@media (max-width:576px) {
+    main {
+        #store_introduction{
+            height: 1150px;
+            .container{
+                .store_introduction_top{
+                    padding: 0px;
+                    .store_introduction_bg1{
+                        height: 540px;
+                        .store_introduction_word {
+                            h1{
+                                margin: 0px 0px 15px 0px;
+                                font-size: 36px;
+                            }
+                            p{
+                                letter-spacing: 0px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    .store_introduction_bg2{
+                        height: 480px;
+                        .store_introduction_youtube{
+                            top: 8%;
+                            width: 370px;
+                            height: 270px;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        #members_introduction {
+
+            .container {
+                height: 1000px;
+
+                .members_introduction_main {
+                    .members_introduction_main_title {
+                        p {
+                            font-size: 32px;
+                            margin-bottom: -50px;
+                        }
+
+                        .dog_left {
+                            position: absolute;
+                            width: 45px;
+                            height: 45px;
+                            left: 35%;
+                            bottom: 0px;
+
+                        }
+
+                        .dog_right {
+                            position: absolute;
+                            width: 45px;
+                            height: 45px;
+                            right: 35%;
+                            bottom: 0px;
+                        }
+                    }
+
+
+                }
+
+                // 610news
+            }
+        }
+
+
+        #menu {
+            height: 950px;
+
+            #img_box {
+                height: 55%;
+            }
+
+            .menu_right {
+                padding: 10px 10px;
+
+            }
+
+            .menu_bg_img {
+                width: 300px;
+            }
+
+        }
+
+        #news {
+            height: 3400px;
+
+            .news_propaganda {
+                .con2 {
+                    .propaganda {
+                        .propaganda_PM {
+                            .propaganda_main {
+                                bottom: 35px;
+                                right: 10px;
+
+                                .propaganda_title {
+                                    font-size: 22px;
+                                    margin: 15px 0px;
+                                }
+
+                                p {
+                                    letter-spacing: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .grass {
+                    height: 300px;
+                }
+            }
+        }
+
+    }
+
+}
+@media (max-width:550px) {
+    main {
+        #store_introduction{
+            height: 1150px;
+            .container{
+                .store_introduction_top{
+                    padding: 0px;
+                    .store_introduction_bg1{
+                        height: 540px;
+                        .store_introduction_word {
+                            h1{
+                                margin: -10px 0px 10px 0px;
+                                font-size: 36px;
+                            }
+                            p{
+                                letter-spacing: 0px;
+                                font-size: 14px;
+                            } 
+                        }
+                    }
+                    .store_introduction_bg2{
+                        height: 480px;
+                        .store_introduction_youtube{
+                            top: 12%;
+                            width: 340px;
+                            height: 240px;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        #members_introduction {
+
+            .container {
+                height: 1000px;
+
+                .members_introduction_main {
+                    .members_introduction_main_title {
+                        p {
+                            font-size: 32px;
+                            margin-bottom: -50px;
+                        }
+
+                        .dog_left {
+                            position: absolute;
+                            width: 45px;
+                            height: 45px;
+                            left: 35%;
+                            bottom: 0px;
+
+                        }
+
+                        .dog_right {
+                            position: absolute;
+                            width: 45px;
+                            height: 45px;
+                            right: 35%;
+                            bottom: 0px;
+                        }
+                    }
+
+
+                }
+
+                // 610news
+            }
+        }
+
+
+        #menu {
+            height: 950px;
+
+            #img_box {
+                height: 55%;
+            }
+
+            .menu_right {
+                padding: 10px 10px;
+
+            }
+
+            .menu_bg_img {
+                width: 300px;
+            }
+
+        }
+
+        #news {
+            height: 3400px;
+
+            .news_propaganda {
+                .con2 {
+                    .propaganda {
+                        .propaganda_PM {
+                            .propaganda_main {
+                                bottom: 35px;
+                                right: 10px;
+
+                                .propaganda_title {
+                                    font-size: 22px;
+                                    margin: 15px 0px;
+                                }
+
+                                p {
+                                    letter-spacing: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .grass {
+                    height: 300px;
+                }
+            }
+        }
+
+    }
+
+}
+
+@media (max-width:520px) {
+    main {
+        #store_introduction{
+            height: 1080px;
+            .container{
+                width: 85%;
+
+                .store_introduction_top{
+                    .store_introduction_bg1{
+                        margin-top: 50px;
+                        height: 430px;
+                        .store_introduction_word {
+                            padding: 80px 0 0px;
+                            // width: 90%;
+                            h1{
+                                margin: 6px 0px 10px 0px;
+                                font-size: 30px;
+                            }
+                            p{
+                                
+                                letter-spacing: 0px;
+                                font-size: 14px;
+                            } 
+                        }
+                    }
+
+                    .store_introduction_bg2{
+                        .store_introduction_youtube{
+                            top: 13%;
+                            width: 350px;
+                            height: 250px;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        #members_introduction {
+
+            .container {
+                height: 1000px;
+
+                .members_introduction_main {
+                    .members_introduction_main_title {
+                        p {
+                            font-size: 32px;
+                            margin-bottom: -50px;
+                        }
+
+                        .dog_left {
+                            position: absolute;
+                            width: 45px;
+                            height: 45px;
+                            left: 35%;
+                            bottom: 0px;
+
+                        }
+
+                        .dog_right {
+                            position: absolute;
+                            width: 45px;
+                            height: 45px;
+                            right: 35%;
+                            bottom: 0px;
+                        }
+                    }
+
+
+                }
+
+                // 610news
+            }
+        }
+
+
+        #menu {
+            height: 950px;
+
+            #img_box {
+                height: 55%;
+            }
+
+            .menu_right {
+                padding: 10px 10px;
+
+            }
+
+            .menu_bg_img {
+                width: 300px;
+            }
+
+        }
+
+        #news {
+            height: 3050px;
+
+            .news_propaganda {
+                .con2 {
+                    .propaganda {
+                        .propaganda_PM {
+                            .propaganda_picture{
+                                width: 35%;
+                                bottom: 5px;
+                            }
+                            .propaganda_main {
+                                bottom: 35px;
+                                right: 10px;
+
+                                .propaganda_title {
+                                    font-size: 22px;
+                                    margin: 15px 0px;
+                                }
+
+                                p {
+                                    letter-spacing: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .grass {
+                    height: 300px;
+                }
+            }
+        }
+
+    }
+
+}
+
 @media (max-width:425px) {
     main {
         #members_introduction {
@@ -2579,6 +3170,9 @@ footer {
 
                 }
             }
+        }
+        #news{
+            height: 2800px;
         }
 
     }

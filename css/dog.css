@@ -425,7 +425,7 @@ main #store_introduction .container .store_introduction_top .store_introduction_
 
 main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word {
   width: 100%;
-  padding: 130px 0 40px;
+  padding: 130px 40px 40px;
   margin: 0 auto;
 }
 
@@ -454,7 +454,7 @@ main #store_introduction .container .store_introduction_top .store_introduction_
 }
 
 main #store_introduction .container .store_introduction_top .store_introduction_bg2 .store_introduction_youtube {
-  width: 600px;
+  width: 500px;
   height: 350px;
   position: absolute;
   top: 35%;
@@ -474,7 +474,7 @@ main #store_introduction .container .store_introduction_down .store_introduction
   width: 600px;
   position: absolute;
   bottom: -80px;
-  right: -100%;
+  right: -600px;
   z-index: 2;
 }
 
@@ -541,6 +541,9 @@ main #members_introduction .container .members_introduction_main .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
 }
 
@@ -640,7 +643,7 @@ main #members_introduction .container .members_introduction_main .row .mask .dir
 }
 
 main #members_introduction .container .members_introduction_main .row .dog {
-  width: 30%;
+  width: 25%;
   position: relative;
   height: 75%;
 }
@@ -1807,8 +1810,8 @@ main #news .news_propaganda .con2 .propaganda .propaganda_PM {
 main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_picture {
   width: 30%;
   position: absolute;
-  bottom: -150px;
-  left: 12%;
+  bottom: -130px;
+  left: 10%;
   z-index: 5;
 }
 
@@ -2113,8 +2116,12 @@ footer .Copyright {
     letter-spacing: 3px;
   }
   main #store_introduction .container .store_introduction_top .store_introduction_bg2 .store_introduction_youtube {
+    top: 30%;
     width: 500px;
     height: 350px;
+  }
+  main #members_introduction .container .members_introduction_main .row .dog {
+    width: 27.5%;
   }
   main #menu .menu_bg_img {
     width: 400px;
@@ -2164,6 +2171,7 @@ footer .Copyright {
     height: 480px;
   }
   main #contact_us .container .information_right {
+    margin-top: 70px;
     height: 500px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2175,44 +2183,16 @@ footer .Copyright {
 }
 
 @media (max-width: 1400px) {
-  main #store_introduction {
-    height: 1770px;
-  }
   main #store_introduction .container {
     height: 100%;
   }
   main #store_introduction .container .store_introduction_top {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     width: 100%;
-    -webkit-box-pack: none;
-        -ms-flex-pack: none;
-            justify-content: none;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  main #store_introduction .container .store_introduction_top .store_introduction_bg1 {
-    background-image: url(../picture/store_introduction/上.svg);
-    width: 100%;
-    height: 700px;
-  }
-  main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word {
-    width: 70%;
-    padding: 180px 15px 0px;
-  }
-  main #store_introduction .container .store_introduction_top .store_introduction_bg2 {
-    background-image: url(../picture/store_introduction/下.svg);
-    width: 100%;
-    height: 700px;
   }
   main #store_introduction .container .store_introduction_top .store_introduction_bg2 .store_introduction_youtube {
-    width: 600px;
+    width: 500px;
     height: 350px;
-    top: 15%;
-    left: 50%;
+    top: 30%;
   }
   main #members_introduction .container {
     height: 1480px;
@@ -2231,7 +2211,7 @@ footer .Copyright {
   }
   main #members_introduction .container .members_introduction_main .row .mask {
     width: 93%;
-    height: 107%;
+    height: 100%;
   }
   main #members_introduction .container .members_introduction_main .row .dog {
     width: 100%;
@@ -2287,6 +2267,23 @@ footer .Copyright {
 }
 
 @media (max-width: 1280px) {
+  main #store_introduction .container {
+    height: 100%;
+  }
+  main #store_introduction .container .store_introduction_top {
+    width: 100%;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word h1 {
+    margin: 30px 0 25px 0px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word p {
+    letter-spacing: 0px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg2 .store_introduction_youtube {
+    width: 450px;
+    height: 300px;
+    top: 33%;
+  }
   main #members_introduction .container {
     height: 1300px;
   }
@@ -2352,20 +2349,64 @@ footer .Copyright {
   }
 }
 
+@media (max-width: 1200px) {
+  main #store_introduction {
+    height: 1770px;
+  }
+  main #store_introduction .container {
+    height: 100%;
+  }
+  main #store_introduction .container .store_introduction_top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 {
+    background-image: url(../picture/store_introduction/上.svg);
+    width: 100%;
+    height: 700px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word {
+    width: 70%;
+    padding: 180px 15px 0px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word h1 {
+    margin: -1px 0 40px 0px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word p {
+    letter-spacing: 10px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg2 {
+    background-image: url(../picture/store_introduction/下.svg);
+    width: 100%;
+    height: 700px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg2 .store_introduction_youtube {
+    width: 600px;
+    height: 400px;
+    top: 10%;
+    left: 50%;
+  }
+}
+
 @media (max-width: 1100px) {
   nav .container {
     width: 100%;
   }
-  main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word {
-    padding: 90px 0 40px;
-  }
   main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word p {
-    letter-spacing: 3px;
     padding: 0px;
   }
   main #store_introduction .container .store_introduction_top .store_introduction_bg2 .store_introduction_youtube {
-    width: 500px;
-    height: 350px;
+    width: 600px;
+    height: 400px;
   }
   main #members_introduction .container {
     height: 1300px;
@@ -2394,7 +2435,7 @@ footer .Copyright {
   }
   main #store_introduction .container .store_introduction_top .store_introduction_bg2 .store_introduction_youtube {
     width: 500px;
-    height: 350px;
+    height: 400px;
   }
   main #members_introduction .container .members_introduction_main .members_introduction_main_title {
     padding-bottom: 40px;
@@ -2551,6 +2592,9 @@ footer .Copyright {
 }
 
 @media (max-width: 762px) {
+  main #store_introduction .container .store_introduction_top {
+    padding-top: 30px;
+  }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main {
     bottom: 40px;
   }
@@ -2563,6 +2607,24 @@ footer .Copyright {
 }
 
 @media (max-width: 687px) {
+  main #store_introduction {
+    height: 1450px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word h1 {
+    margin: 30px 0 25px 0;
+    font-size: 40px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word p {
+    letter-spacing: 2px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg2 {
+    height: 570px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg2 .store_introduction_youtube {
+    top: 7%;
+    width: 455px;
+    height: 320px;
+  }
   main #members_introduction .container {
     height: 1000px;
   }
@@ -2602,6 +2664,30 @@ footer .Copyright {
 }
 
 @media (max-width: 650px) {
+  main #store_introduction {
+    height: 1300px;
+  }
+  main #store_introduction .container .store_introduction_top {
+    padding: 0px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 {
+    height: 640px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word h1 {
+    margin: 40px 0px 15px 0px;
+    font-size: 36px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word p {
+    font-size: 14px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg2 {
+    height: 500px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg2 .store_introduction_youtube {
+    top: 7%;
+    width: 400px;
+    height: 290px;
+  }
   main #news {
     height: 3400px;
   }
@@ -2636,6 +2722,31 @@ footer .Copyright {
 }
 
 @media (max-width: 610px) {
+  main #store_introduction {
+    height: 1300px;
+  }
+  main #store_introduction .container .store_introduction_top {
+    padding: 0px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 {
+    height: 640px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word h1 {
+    margin: 40px 0px 15px 0px;
+    font-size: 36px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word p {
+    letter-spacing: 0px;
+    font-size: 14px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg2 {
+    height: 500px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg2 .store_introduction_youtube {
+    top: 7%;
+    width: 400px;
+    height: 290px;
+  }
   main #members_introduction .container {
     height: 1000px;
   }
@@ -2688,9 +2799,251 @@ footer .Copyright {
   }
 }
 
+@media (max-width: 576px) {
+  main #store_introduction {
+    height: 1150px;
+  }
+  main #store_introduction .container .store_introduction_top {
+    padding: 0px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 {
+    height: 540px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word h1 {
+    margin: 0px 0px 15px 0px;
+    font-size: 36px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word p {
+    letter-spacing: 0px;
+    font-size: 14px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg2 {
+    height: 480px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg2 .store_introduction_youtube {
+    top: 8%;
+    width: 370px;
+    height: 270px;
+  }
+  main #members_introduction .container {
+    height: 1000px;
+  }
+  main #members_introduction .container .members_introduction_main .members_introduction_main_title p {
+    font-size: 32px;
+    margin-bottom: -50px;
+  }
+  main #members_introduction .container .members_introduction_main .members_introduction_main_title .dog_left {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 35%;
+    bottom: 0px;
+  }
+  main #members_introduction .container .members_introduction_main .members_introduction_main_title .dog_right {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    right: 35%;
+    bottom: 0px;
+  }
+  main #menu {
+    height: 950px;
+  }
+  main #menu #img_box {
+    height: 55%;
+  }
+  main #menu .menu_right {
+    padding: 10px 10px;
+  }
+  main #menu .menu_bg_img {
+    width: 300px;
+  }
+  main #news {
+    height: 3400px;
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main {
+    bottom: 35px;
+    right: 10px;
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main .propaganda_title {
+    font-size: 22px;
+    margin: 15px 0px;
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main p {
+    letter-spacing: 5px;
+  }
+  main #news .news_propaganda .grass {
+    height: 300px;
+  }
+}
+
+@media (max-width: 550px) {
+  main #store_introduction {
+    height: 1150px;
+  }
+  main #store_introduction .container .store_introduction_top {
+    padding: 0px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 {
+    height: 540px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word h1 {
+    margin: -10px 0px 10px 0px;
+    font-size: 36px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word p {
+    letter-spacing: 0px;
+    font-size: 14px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg2 {
+    height: 480px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg2 .store_introduction_youtube {
+    top: 12%;
+    width: 340px;
+    height: 240px;
+  }
+  main #members_introduction .container {
+    height: 1000px;
+  }
+  main #members_introduction .container .members_introduction_main .members_introduction_main_title p {
+    font-size: 32px;
+    margin-bottom: -50px;
+  }
+  main #members_introduction .container .members_introduction_main .members_introduction_main_title .dog_left {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 35%;
+    bottom: 0px;
+  }
+  main #members_introduction .container .members_introduction_main .members_introduction_main_title .dog_right {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    right: 35%;
+    bottom: 0px;
+  }
+  main #menu {
+    height: 950px;
+  }
+  main #menu #img_box {
+    height: 55%;
+  }
+  main #menu .menu_right {
+    padding: 10px 10px;
+  }
+  main #menu .menu_bg_img {
+    width: 300px;
+  }
+  main #news {
+    height: 3400px;
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main {
+    bottom: 35px;
+    right: 10px;
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main .propaganda_title {
+    font-size: 22px;
+    margin: 15px 0px;
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main p {
+    letter-spacing: 5px;
+  }
+  main #news .news_propaganda .grass {
+    height: 300px;
+  }
+}
+
+@media (max-width: 520px) {
+  main #store_introduction {
+    height: 1080px;
+  }
+  main #store_introduction .container {
+    width: 85%;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 {
+    margin-top: 50px;
+    height: 430px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word {
+    padding: 80px 0 0px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word h1 {
+    margin: 6px 0px 10px 0px;
+    font-size: 30px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word p {
+    letter-spacing: 0px;
+    font-size: 14px;
+  }
+  main #store_introduction .container .store_introduction_top .store_introduction_bg2 .store_introduction_youtube {
+    top: 13%;
+    width: 350px;
+    height: 250px;
+  }
+  main #members_introduction .container {
+    height: 1000px;
+  }
+  main #members_introduction .container .members_introduction_main .members_introduction_main_title p {
+    font-size: 32px;
+    margin-bottom: -50px;
+  }
+  main #members_introduction .container .members_introduction_main .members_introduction_main_title .dog_left {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 35%;
+    bottom: 0px;
+  }
+  main #members_introduction .container .members_introduction_main .members_introduction_main_title .dog_right {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    right: 35%;
+    bottom: 0px;
+  }
+  main #menu {
+    height: 950px;
+  }
+  main #menu #img_box {
+    height: 55%;
+  }
+  main #menu .menu_right {
+    padding: 10px 10px;
+  }
+  main #menu .menu_bg_img {
+    width: 300px;
+  }
+  main #news {
+    height: 3050px;
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_picture {
+    width: 35%;
+    bottom: 5px;
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main {
+    bottom: 35px;
+    right: 10px;
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main .propaganda_title {
+    font-size: 22px;
+    margin: 15px 0px;
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main p {
+    letter-spacing: 5px;
+  }
+  main #news .news_propaganda .grass {
+    height: 300px;
+  }
+}
+
 @media (max-width: 425px) {
   main #members_introduction .container {
     height: 1000px;
+  }
+  main #news {
+    height: 2800px;
   }
 }
 /*# sourceMappingURL=dog.css.map */
