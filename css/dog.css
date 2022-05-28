@@ -1620,6 +1620,7 @@ main #menu #img_box {
   background-image: url(../picture/灰熊雞腿.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 main #menu #img_box .img_box_mask {
@@ -3025,25 +3026,56 @@ footer .Copyright {
   main #menu .menu_right {
     padding: 10px 10px;
   }
+  main #menu .menu_right .menu_text h1 {
+    font-size: 34px;
+    margin-bottom: 0px;
+  }
+  main #menu .menu_right .menu_text h2 {
+    font-size: 26px;
+  }
+  main #menu .menu_right .menu_text ul li {
+    font-size: 16px;
+  }
+  main #menu .menu_right .menu_text button {
+    padding: 5px 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main #menu .menu_right .menu_text button span {
+    line-height: 0px;
+    font-size: 20px;
+  }
+  main #menu .menu_right .menu_text button .menu_btn_img {
+    height: 40px;
+  }
   main #menu .menu_bg_img {
-    width: 300px;
+    width: 260px;
   }
   main #news {
-    height: 2900px;
+    height: 3000px;
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM {
+    height: 300px;
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_picture {
-    width: 35%;
-    bottom: 5px;
+    display: none;
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main {
-    bottom: 35px;
-    right: 10px;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main .propaganda_title {
     font-size: 22px;
     margin: 15px 0px;
+    text-align: center;
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main p {
+    width: 90%;
+    margin: 0 auto;
     letter-spacing: 5px;
   }
   main #news .news_propaganda .grass {
@@ -3148,23 +3180,26 @@ footer .Copyright {
   main #menu .menu_right {
     padding: 10px 10px;
   }
-  main #menu .menu_bg_img {
-    width: 300px;
-  }
   main #news {
     height: 3050px;
   }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM {
+    height: 300px;
+  }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_picture {
-    width: 35%;
-    bottom: 5px;
+    display: none;
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main {
-    bottom: 35px;
-    right: 10px;
+    width: 85%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main .propaganda_title {
     font-size: 22px;
     margin: 15px 0px;
+    text-align: center;
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main p {
     letter-spacing: 5px;
@@ -3202,6 +3237,31 @@ footer .Copyright {
   }
   main #news {
     height: 2800px;
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM {
+    height: 300px;
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_picture {
+    display: none;
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main {
+    width: 88%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main .propaganda_title {
+    font-size: 20px;
+    margin: 15px 0px;
+    text-align: center;
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main p {
+    margin: 0;
+    letter-spacing: 5px;
+  }
+  main #news .news_propaganda .grass {
+    height: 300px;
   }
   main #contact_us .container .information_map .map_box .map_img {
     width: 300px;

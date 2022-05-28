@@ -1027,6 +1027,7 @@ main {
             background-image: url(../picture/灰熊雞腿.jpg);
             background-repeat: no-repeat;
             background-size: cover;
+            background-position: center;
 
             .img_box_mask {
                 // content: "";
@@ -3156,39 +3157,78 @@ footer {
                 height: 55%;
             }
 
+            
             .menu_right {
                 padding: 10px 10px;
+                .menu_text {
+                    h1 {
+                        font-size: 34px;
+                        margin-bottom: 0px;
+                    }
 
+                    h2 {
+                        font-size: 26px;
+                    }
+
+                    ul {
+                        li {
+                            font-size: 16px;
+                        }
+                    }
+
+                    button {
+                        padding: 5px 10px;
+                        align-items: center;
+
+                        span {
+                            line-height: 0px;
+                            font-size: 20px;
+                        }
+
+                        .menu_btn_img {
+                            height: 40px;
+                        }
+                    }
+                }
             }
 
             .menu_bg_img {
-                width: 300px;
+                width: 260px;
             }
 
         }
 
         #news {
-            height: 2900px;
+            height: 3000px;
 
             .news_propaganda {
                 .con2 {
                     .propaganda {
                         .propaganda_PM {
+                            height: 300px;
                             .propaganda_picture {
-                                width: 35%;
-                                bottom: 5px;
+                                // width: 35%;
+                                // bottom: 5px;
+                                display: none;
+                                
                             }
 
                             .propaganda_main {
-                                bottom: 35px;
-                                right: 10px;
-
+                                // bottom: 35px;
+                                // right: 10px;
+                                width: 80%;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%,-50%);
                                 .propaganda_title {
                                     font-size: 22px;
                                     margin: 15px 0px;
+                                    text-align: center;
                                 }
 
                                 p {
+                                    width: 90%;
+                                    margin: 0 auto;
                                     letter-spacing: 5px;
                                 }
                             }
@@ -3353,9 +3393,7 @@ footer {
 
             }
 
-            .menu_bg_img {
-                width: 300px;
-            }
+
 
         }
 
@@ -3366,21 +3404,30 @@ footer {
                 .con2 {
                     .propaganda {
                         .propaganda_PM {
+                            height: 300px;
                             .propaganda_picture {
-                                width: 35%;
-                                bottom: 5px;
+                                // width: 35%;
+                                // bottom: 5px;
+                                display: none;
+                                
                             }
 
                             .propaganda_main {
-                                bottom: 35px;
-                                right: 10px;
-
+                                // bottom: 35px;
+                                // right: 10px;
+                                width: 85%;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%,-50%);
                                 .propaganda_title {
                                     font-size: 22px;
                                     margin: 15px 0px;
+                                    text-align: center;
                                 }
 
                                 p {
+
+                                    // margin: 0;
                                     letter-spacing: 5px;
                                 }
                             }
@@ -3451,6 +3498,47 @@ footer {
 
         #news {
             height: 2800px;
+
+            .news_propaganda {
+                .con2 {
+                    .propaganda {
+                        .propaganda_PM {
+                            height: 300px;
+                            .propaganda_picture {
+                                // width: 35%;
+                                // bottom: 5px;
+                                display: none;
+                                
+                            }
+
+                            .propaganda_main {
+                                // bottom: 35px;
+                                // right: 10px;
+                                width: 88%;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%,-50%);
+                                .propaganda_title {
+                                    font-size: 20px;
+                                    margin: 15px 0px;
+                                    text-align: center;
+                                }
+
+                                p {
+                                    margin: 0;
+                                    // width: 8%;
+                                    // margin: 0;
+                                    letter-spacing: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .grass {
+                    height: 300px;
+                }
+            }
         }
 
 
@@ -3492,6 +3580,7 @@ footer {
                             padding: 40px 0px;
 
                             p {
+
                                 font-size: 12px;
                                 line-height: 22px;
                             }
