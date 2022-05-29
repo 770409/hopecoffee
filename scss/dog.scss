@@ -1253,8 +1253,8 @@ main {
                             flex-direction: column;
                             justify-content: center;
                             position: absolute;
-                            bottom: 200px;
-                            right: 300px;
+                            bottom: 100px;
+                            right: 400px;
 
                             .propaganda_title {
                                 font-size: 44px;
@@ -1265,7 +1265,8 @@ main {
                             p {
                                 color: rgb(255, 255, 255);
                                 letter-spacing: 8px;
-                                font-size: 16px;
+                                font-size: 20px;
+                                line-height: 40px;
                             }
 
                         }
@@ -1559,8 +1560,12 @@ footer {
                     .propaganda {
                         .propaganda_PM {
                             .propaganda_main {
-                                bottom: 125px;
-                                right: 5%;
+                                bottom: 50px;
+                                right: 15%;
+
+                                p {
+                                    line-height: 35px;
+                                }
                             }
                         }
                     }
@@ -1710,11 +1715,15 @@ footer {
                     .propaganda {
                         .propaganda_PM {
                             .propaganda_main {
-                                bottom: 80px;
-                                right: 10%;
+                                bottom: 30px;
+                                right: 13%;
 
                                 .propaganda_title {
-                                    font-size: 38px;
+
+                                    // font-size: 38px;
+                                    p {
+                                        line-height: 28px;
+                                    }
                                 }
                             }
                         }
@@ -1783,16 +1792,7 @@ footer {
 
 
                     .store_introduction_bg1 {
-                        // background-image: url(../picture/store_introduction/上.svg);
-                        // width: 100%;
-                        // height: 700px;
 
-                        // .store_introduction_word {
-                        //     width: 70%;
-                        //     padding: 180px 15px 0px;
-
-
-                        // }
                         .store_introduction_word {
                             h1 {
                                 margin: 30px 0 25px 0px;
@@ -1806,9 +1806,6 @@ footer {
 
                     .store_introduction_bg2 {
 
-                        // background-image: url(../picture/store_introduction/下.svg);
-                        // width: 100%;
-                        // height: 700px;
 
                         .store_introduction_youtube {
                             width: 450px;
@@ -1904,8 +1901,17 @@ footer {
                             }
 
                             .propaganda_main {
-                                bottom: 70px;
-                                right: 10%;
+                                bottom: 35px;
+                                right: 13%;
+
+                                .propaganda_title {
+                                    font-size: 38px;
+                                }
+
+                                p {
+                                    font-size: 18px;
+                                    line-height: 30px;
+                                }
                             }
                         }
                     }
@@ -2041,8 +2047,12 @@ footer {
                             }
 
                             .propaganda_main {
-                                bottom: 50px;
+                                bottom: 35px;
                                 right: 5%;
+
+                                p {
+                                    line-height: 25px;
+                                }
                             }
                         }
                     }
@@ -2187,7 +2197,7 @@ footer {
                             }
 
                             .propaganda_main {
-                                bottom: 70px;
+                                bottom: 47px;
                                 right: 2%;
 
                                 .propaganda_title {
@@ -2195,7 +2205,8 @@ footer {
                                 }
 
                                 p {
-                                    font-size: 12px;
+                                    line-height: 25px;
+                                    font-size: 16px;
                                 }
                             }
                         }
@@ -2364,7 +2375,8 @@ footer {
                                 }
 
                                 p {
-                                    font-size: 12px;
+                                    line-height: 20px;
+                                    font-size: 15px;
                                 }
                             }
                         }
@@ -2421,13 +2433,18 @@ footer {
 
                     .propaganda {
                         .propaganda_PM {
+                            .propaganda_picture {
+                                width: 37%;
+                                left: 6%;
+                            }
+
                             .propaganda_main {
                                 .propaganda_title {
                                     font-size: 26px;
                                 }
 
-                                bottom: 40px;
-                                //    right: 1%;
+                                bottom: 30px;
+                                right: 4%;
                             }
                         }
                     }
@@ -2525,6 +2542,27 @@ footer {
                 }
             }
 
+            .news_propaganda {
+                .con2 {
+                    .propaganda {
+                        .propaganda_PM {
+                            .propaganda_picture {
+                                width: 35%;
+                                left: 0;
+                                bottom: -50px;
+                            }
+
+                            .propaganda_main {
+                                p {
+                                    line-height: 18px;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
 
 
         }
@@ -2559,8 +2597,8 @@ footer {
                     }
                 }
 
-                .information_right{
-                    .social_media{
+                .information_right {
+                    .social_media {
                         height: 450px;
                     }
                 }
@@ -2613,12 +2651,17 @@ footer {
             height: 3400px;
 
             .news_propaganda {
+                .grass {
+                    height: 300px;
+                }
+
                 .con2 {
                     .propaganda {
                         .propaganda_PM {
                             .propaganda_picture {
-                                width: 43%;
-                                left: -13px;
+                                width: 38%;
+                                left: 0;
+                                bottom: -52px;
                             }
 
                             .propaganda_main {
@@ -2781,7 +2824,7 @@ footer {
                         .propaganda_PM {
                             .propaganda_main {
                                 bottom: 35px;
-                                right: 10px;
+                                right: 30px;
 
                                 .propaganda_title {
                                     font-size: 22px;
@@ -2797,7 +2840,7 @@ footer {
                 }
 
                 .grass {
-                    height: 300px;
+                    height: 276px;
                 }
             }
         }
@@ -2928,7 +2971,7 @@ footer {
                 }
 
                 .grass {
-                    height: 280px;
+                    // height: 280px;
                 }
             }
         }
@@ -3040,9 +3083,10 @@ footer {
                 .con2 {
                     .propaganda {
                         .propaganda_PM {
-                            .propaganda_picture{
-                                bottom: -70px;
+                            .propaganda_picture {
+                                bottom: -45px;
                             }
+
                             .propaganda_main {
                                 bottom: 35px;
                                 right: 10px;
@@ -3157,9 +3201,10 @@ footer {
                 height: 55%;
             }
 
-            
+
             .menu_right {
                 padding: 10px 10px;
+
                 .menu_text {
                     h1 {
                         font-size: 34px;
@@ -3206,11 +3251,12 @@ footer {
                     .propaganda {
                         .propaganda_PM {
                             height: 300px;
+
                             .propaganda_picture {
                                 // width: 35%;
                                 // bottom: 5px;
                                 display: none;
-                                
+
                             }
 
                             .propaganda_main {
@@ -3219,7 +3265,8 @@ footer {
                                 width: 80%;
                                 top: 50%;
                                 left: 50%;
-                                transform: translate(-50%,-50%);
+                                transform: translate(-50%, -50%);
+
                                 .propaganda_title {
                                     font-size: 22px;
                                     margin: 15px 0px;
@@ -3227,7 +3274,7 @@ footer {
                                 }
 
                                 p {
-                                    width: 90%;
+                                    // width: 90%;
                                     margin: 0 auto;
                                     letter-spacing: 5px;
                                 }
@@ -3237,7 +3284,7 @@ footer {
                 }
 
                 .grass {
-                    height: 300px;
+                    // height: 300px;
                 }
             }
         }
@@ -3251,7 +3298,8 @@ footer {
                             .information_picture {
                                 right: 0px;
                             }
-                            h1{
+
+                            h1 {
                                 top: 60px;
                             }
                         }
@@ -3405,11 +3453,12 @@ footer {
                     .propaganda {
                         .propaganda_PM {
                             height: 300px;
+
                             .propaganda_picture {
                                 // width: 35%;
                                 // bottom: 5px;
                                 display: none;
-                                
+
                             }
 
                             .propaganda_main {
@@ -3418,7 +3467,8 @@ footer {
                                 width: 85%;
                                 top: 50%;
                                 left: 50%;
-                                transform: translate(-50%,-50%);
+                                transform: translate(-50%, -50%);
+
                                 .propaganda_title {
                                     font-size: 22px;
                                     margin: 15px 0px;
@@ -3435,16 +3485,16 @@ footer {
                     }
                 }
 
-                .grass {
-                    height: 300px;
-                }
+
             }
         }
+
         #contact_us {
             .container {
                 .information_left {
                     .contact_us_information {
                         height: 600px;
+
                         .information_title {
 
                             .information_picture {
@@ -3454,13 +3504,15 @@ footer {
                                 top: 10px;
                                 right: 15px;
                             }
-                            h1{
+
+                            h1 {
                                 font-size: 28px;
                                 top: 60px;
                             }
                         }
-                        .contact_us_information_box{
-                            img{
+
+                        .contact_us_information_box {
+                            img {
                                 margin-top: 10px;
                                 width: 220px;
                                 height: 95px;
@@ -3469,8 +3521,9 @@ footer {
                     }
 
                 }
-                .information_right{
-                    .social_media{
+
+                .information_right {
+                    .social_media {
                         height: 400px;
                     }
                 }
@@ -3489,7 +3542,26 @@ footer {
                 height: 1000px;
 
                 .members_introduction_main {
-                    .members_introduction_main_title {}
+                    .row{
+                        height: 70%;
+                    }
+                    .members_introduction_main_title {
+                        p {
+
+                            margin: 0;
+                        }
+
+                        .dog_left {
+                            left: 32%;
+
+                            bottom: 35px;
+                        }
+
+                        .dog_right {
+                            right: 32%;
+                            bottom: 35px;
+                        }
+                    }
 
 
                 }
@@ -3504,11 +3576,12 @@ footer {
                     .propaganda {
                         .propaganda_PM {
                             height: 300px;
+
                             .propaganda_picture {
                                 // width: 35%;
                                 // bottom: 5px;
                                 display: none;
-                                
+
                             }
 
                             .propaganda_main {
@@ -3517,7 +3590,8 @@ footer {
                                 width: 88%;
                                 top: 50%;
                                 left: 50%;
-                                transform: translate(-50%,-50%);
+                                transform: translate(-50%, -50%);
+
                                 .propaganda_title {
                                     font-size: 20px;
                                     margin: 15px 0px;
@@ -3525,6 +3599,7 @@ footer {
                                 }
 
                                 p {
+                                    font-size: 13px;
                                     margin: 0;
                                     // width: 8%;
                                     // margin: 0;
@@ -3535,14 +3610,14 @@ footer {
                     }
                 }
 
-                .grass {
-                    height: 300px;
-                }
+
             }
         }
 
 
         #contact_us {
+            height: 1600px;
+
             .container {
                 .information_map {
                     .map_box {
@@ -3562,6 +3637,14 @@ footer {
                     }
                 }
             }
+        }
+    }
+
+    footer {
+        .Copyright {
+            letter-spacing: 1px;
+            // margin: 0 auto;
+            text-align: center;
         }
     }
 }
@@ -3598,6 +3681,34 @@ footer {
                     }
                 }
 
+            }
+        }
+
+        #members_introduction {
+            .container{
+
+                .members_introduction_main {
+                    .row {
+                        .mask {
+                            // margin-top: 100px;
+                        }
+                    }
+                    .members_introduction_main_title {
+                        p {
+                            font-size: 30px;
+                            margin: 0;
+                        }
+    
+                        .dog_left {
+                            bottom: 35px;
+                        }
+    
+                        .dog_right {
+                            bottom: 35px;
+                        }
+                    }
+    
+                }
             }
         }
 

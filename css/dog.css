@@ -1832,8 +1832,8 @@ main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  bottom: 200px;
-  right: 300px;
+  bottom: 100px;
+  right: 400px;
 }
 
 main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main .propaganda_title {
@@ -1845,7 +1845,8 @@ main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main .p
 main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main p {
   color: white;
   letter-spacing: 8px;
-  font-size: 16px;
+  font-size: 20px;
+  line-height: 40px;
 }
 
 main #contact_us {
@@ -2134,8 +2135,11 @@ footer .Copyright {
     height: 1500px;
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main {
-    bottom: 125px;
-    right: 5%;
+    bottom: 50px;
+    right: 15%;
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main p {
+    line-height: 35px;
   }
   main #contact_us {
     -webkit-box-align: unset;
@@ -2234,11 +2238,11 @@ footer .Copyright {
     bottom: -100px;
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main {
-    bottom: 80px;
-    right: 10%;
+    bottom: 30px;
+    right: 13%;
   }
-  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main .propaganda_title {
-    font-size: 38px;
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main .propaganda_title p {
+    line-height: 28px;
   }
   main #menu {
     height: 1200px;
@@ -2348,8 +2352,15 @@ footer .Copyright {
     left: 7%;
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main {
-    bottom: 70px;
-    right: 10%;
+    bottom: 35px;
+    right: 13%;
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main .propaganda_title {
+    font-size: 38px;
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main p {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
@@ -2428,8 +2439,11 @@ footer .Copyright {
     bottom: -95px;
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main {
-    bottom: 50px;
+    bottom: 35px;
     right: 5%;
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main p {
+    line-height: 25px;
   }
 }
 
@@ -2489,14 +2503,15 @@ footer .Copyright {
     left: 3%;
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main {
-    bottom: 70px;
+    bottom: 47px;
     right: 2%;
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main .propaganda_title {
     font-size: 30px;
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main p {
-    font-size: 12px;
+    line-height: 25px;
+    font-size: 16px;
   }
 }
 
@@ -2584,7 +2599,8 @@ footer .Copyright {
     font-size: 30px;
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main p {
-    font-size: 12px;
+    line-height: 20px;
+    font-size: 15px;
   }
   main #menu .menu_bg_img {
     width: 300px;
@@ -2604,8 +2620,13 @@ footer .Copyright {
   main #store_introduction .container .store_introduction_top {
     padding-top: 30px;
   }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_picture {
+    width: 37%;
+    left: 6%;
+  }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main {
-    bottom: 40px;
+    bottom: 30px;
+    right: 4%;
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main .propaganda_title {
     font-size: 26px;
@@ -2656,6 +2677,15 @@ footer .Copyright {
   main #news .container .news_show .cardBox .card1 {
     width: 100%;
   }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_picture {
+    width: 35%;
+    left: 0;
+    bottom: -50px;
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main p {
+    line-height: 18px;
+    font-size: 14px;
+  }
   main #contact_us {
     height: 2000px;
   }
@@ -2703,9 +2733,13 @@ footer .Copyright {
   main #news {
     height: 3400px;
   }
+  main #news .news_propaganda .grass {
+    height: 300px;
+  }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_picture {
-    width: 43%;
-    left: -13px;
+    width: 38%;
+    left: 0;
+    bottom: -52px;
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main {
     right: 0px;
@@ -2798,7 +2832,7 @@ footer .Copyright {
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main {
     bottom: 35px;
-    right: 10px;
+    right: 30px;
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main .propaganda_title {
     font-size: 22px;
@@ -2808,7 +2842,7 @@ footer .Copyright {
     letter-spacing: 5px;
   }
   main #news .news_propaganda .grass {
-    height: 300px;
+    height: 276px;
   }
 }
 
@@ -2888,9 +2922,6 @@ footer .Copyright {
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main p {
     letter-spacing: 5px;
   }
-  main #news .news_propaganda .grass {
-    height: 280px;
-  }
 }
 
 @media (max-width: 550px) {
@@ -2954,7 +2985,7 @@ footer .Copyright {
     width: 300px;
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_picture {
-    bottom: -70px;
+    bottom: -45px;
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main {
     bottom: 35px;
@@ -3074,12 +3105,8 @@ footer .Copyright {
     text-align: center;
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main p {
-    width: 90%;
     margin: 0 auto;
     letter-spacing: 5px;
-  }
-  main #news .news_propaganda .grass {
-    height: 300px;
   }
   main #contact_us .container .information_left .contact_us_information .information_title .information_picture {
     right: 0px;
@@ -3204,9 +3231,6 @@ footer .Copyright {
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main p {
     letter-spacing: 5px;
   }
-  main #news .news_propaganda .grass {
-    height: 300px;
-  }
   main #contact_us .container .information_left .contact_us_information {
     height: 600px;
   }
@@ -3235,6 +3259,20 @@ footer .Copyright {
   main #members_introduction .container {
     height: 1000px;
   }
+  main #members_introduction .container .members_introduction_main .row {
+    height: 70%;
+  }
+  main #members_introduction .container .members_introduction_main .members_introduction_main_title p {
+    margin: 0;
+  }
+  main #members_introduction .container .members_introduction_main .members_introduction_main_title .dog_left {
+    left: 32%;
+    bottom: 35px;
+  }
+  main #members_introduction .container .members_introduction_main .members_introduction_main_title .dog_right {
+    right: 32%;
+    bottom: 35px;
+  }
   main #news {
     height: 2800px;
   }
@@ -3257,11 +3295,12 @@ footer .Copyright {
     text-align: center;
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main p {
+    font-size: 13px;
     margin: 0;
     letter-spacing: 5px;
   }
-  main #news .news_propaganda .grass {
-    height: 300px;
+  main #contact_us {
+    height: 1600px;
   }
   main #contact_us .container .information_map .map_box .map_img {
     width: 300px;
@@ -3273,6 +3312,10 @@ footer .Copyright {
   main #contact_us .container .information_map .map_box .maps {
     width: 300px;
     height: 210px;
+  }
+  footer .Copyright {
+    letter-spacing: 1px;
+    text-align: center;
   }
 }
 
@@ -3297,6 +3340,16 @@ footer .Copyright {
     top: 10%;
     width: 260px;
     height: 190px;
+  }
+  main #members_introduction .container .members_introduction_main .members_introduction_main_title p {
+    font-size: 30px;
+    margin: 0;
+  }
+  main #members_introduction .container .members_introduction_main .members_introduction_main_title .dog_left {
+    bottom: 35px;
+  }
+  main #members_introduction .container .members_introduction_main .members_introduction_main_title .dog_right {
+    bottom: 35px;
   }
   main #menu .menu_right .menu_text h1 {
     font-size: 34px;
