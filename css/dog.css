@@ -2922,6 +2922,10 @@ footer .Copyright {
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main p {
     letter-spacing: 5px;
   }
+  footer .Copyright {
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -3230,6 +3234,9 @@ footer .Copyright {
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main p {
     letter-spacing: 5px;
+  }
+  main #contact_us {
+    height: 1750px;
   }
   main #contact_us .container .information_left .contact_us_information {
     height: 600px;

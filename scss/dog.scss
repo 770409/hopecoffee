@@ -2977,7 +2977,12 @@ footer {
         }
 
     }
-
+    footer{
+        .Copyright{
+            font-size: 12px;
+            letter-spacing: 3px;
+        }
+    }
 }
 
 @media (max-width:550px) {
@@ -3490,6 +3495,7 @@ footer {
         }
 
         #contact_us {
+            height: 1750px;
             .container {
                 .information_left {
                     .contact_us_information {
