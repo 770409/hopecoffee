@@ -3212,7 +3212,7 @@ footer .Copyright {
     padding: 10px 10px;
   }
   main #news {
-    height: 3050px;
+    height: 2850px;
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM {
     height: 300px;
@@ -3290,20 +3290,20 @@ footer .Copyright {
     display: none;
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main {
-    width: 88%;
+    width: 90%;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main .propaganda_title {
-    font-size: 20px;
+    font-size: 22px;
     margin: 15px 0px;
     text-align: center;
   }
   main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main p {
     font-size: 13px;
-    margin: 0;
+    margin: 0 12px;
     letter-spacing: 5px;
   }
   main #contact_us {
@@ -3323,6 +3323,32 @@ footer .Copyright {
   footer .Copyright {
     letter-spacing: 1px;
     text-align: center;
+  }
+}
+
+@media (max-width: 383px) {
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM {
+    height: 300px;
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_picture {
+    display: none;
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main {
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main .propaganda_title {
+    font-size: 20px;
+    margin: 15px 0px;
+    text-align: center;
+  }
+  main #news .news_propaganda .con2 .propaganda .propaganda_PM .propaganda_main p {
+    font-size: 12px;
+    margin: 0 12px;
+    letter-spacing: 5px;
   }
 }
 
