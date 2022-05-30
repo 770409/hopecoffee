@@ -839,11 +839,11 @@
         //     }
         // }
 
-        var pictureNum = 0;
+        var pictureNum = 1;
         function pictureChang() {
             pictureNum++;
             if (pictureNum > 5) {
-                pictureNum = 0;
+                pictureNum = 1;
             }
         }
 
@@ -906,15 +906,15 @@
             var x = getMousePosition(event).x;
             var y = getMousePosition(event).y;
             // 设置styleImg的坐标
-            styleImg.style.top = (y - 70) + "px";
-            styleImg.style.left = (x + 70) + "px";
+            styleImg.style.top = (y - 50) + "px";
+            styleImg.style.left = (x + 10) + "px";
             //绑定testDiv为当前鼠标小尾巴生效的区域
             var testDiv = document.querySelector("body");
             // 将新建的标签加到页面的 body标签中
             testDiv.appendChild(styleImg);
             // 在文档中有超出的地方就会不显示，所以尽量绑定到页面的div中
             // 设置溢出隐藏，为了防止鼠标在移动的过程中会触发上下滚动条
-            testDiv.style.overflow = 'hidden';
+            // testDiv.style.overflow = 'hidden';
             //
             // testDiv.appendChild(styleImg);
 
