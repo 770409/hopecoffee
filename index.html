@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <!-- 卡片引入 -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap"
-        rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap"
+        rel="stylesheet"> -->
 
     <!-- aos引入 -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -20,36 +20,26 @@
 </head>
 
 <body>
-    <input type="checkbox" id="burger-menu-checkbox">
 
-    <div class="burger-menu">
-        <label for="burger-menu-checkbox" class="burger-menu__toggle"></label>
-        <ul class="burger-menu__ingredients">
-            <li class="burger-menu__slice burger-menu__slice--bread">
-                <a href="">店家理念</a>
-            </li>
-            <li class="burger-menu__slice burger-menu__slice--lettuce">
-                <a href="">美味菜單</a>
-            </li>
-            <li class="burger-menu__slice burger-menu__slice--tomatoes">
-                <a href="">最新消息</a>
-            </li>
-            <li class="burger-menu__slice burger-menu__slice--cheese">
-                <a href="">聯絡我們</a>
-            </li>
-            <li class="burger-menu__slice burger-menu__slice--steak">
-                <a href=""></a>
-            </li>
-            <li class="burger-menu__slice burger-menu__slice--bread">
-                <a href="">Contact</a>
-            </li>
-        </ul>
-    </div>
     <header>
         <nav>
 
-            <div class="container">
 
+
+            <div class="container">
+                <div class="menu_bar">
+                    <label for="switch">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <input type="checkbox" id="switch"><!--選單開關-->
+                    <ul class="menu"><!--選單內容-->
+                        <li><a href="##">Home</a></li>
+                        <li><a href="##">About</a></li>
+                        <li><a href="##">Graphy</a></li>
+                        <li><a href="##">Intro</a></li>
+                        <li><a href="##">Contact</a></li>
+                      </ul>
+                </div>
                 <a href=""><img class="logo" src="./svg/loog2.svg" alt=""></a>
                 <div class="menu_main">
                     <ul>
@@ -75,7 +65,7 @@
     <main>
         <section id="banner">
 
-            <div class="swiper mySwiper-banner">
+            <div class="swiper mySwiper-banner swiper-no-swiping">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide swiper-slide1" style="background-image: url(./picture/banner1.jpg);">
                         <!-- <div class=""></div> -->
@@ -92,7 +82,6 @@
                 </div>
             </div>
         </section>
-
 
         <!-- 店家介紹 -->
         <section id="store_introduction">
@@ -143,7 +132,6 @@
                 </div>
             </div>
         </section>
-
 
         <!-- 成員介紹 -->
         <section id="members_introduction">
@@ -203,98 +191,6 @@
                             </div>
                         </div>
                         <!-- 房子按鈕 -->
-
-                        <button class="btn-challenge">
-                            <div class="btnBox">
-                                <span>成員介紹</span>
-                                <img src="./picture/按鈕狗狗1號.png" alt="">
-                            </div>
-
-                            <!-- <small>Hover for effect</small> -->
-                            <div class="hover-area">
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="hover-col"></div>
-                                <div class="icon-home">
-                                    <div class="roof roof-1"></div>
-                                    <div class="roof roof-2"></div>
-                                    <div class="roof-design roof-design-1"></div>
-                                    <div class="roof-design roof-design-2"></div>
-                                    <div class="roof-side roof-side-1"></div>
-                                    <div class="roof-side roof-side-2"></div>
-                                    <div class="roof-wall roof-wall-1"></div>
-                                    <div class="roof-wall roof-wall-2"></div>
-                                    <div class="wall wall-1"></div>
-                                    <div class="wall wall-2"></div>
-                                    <div class="wall wall-3"></div>
-                                    <div class="wall wall-4"></div>
-                                    <div class="door"></div>
-                                    <div class="floor"></div>
-                                </div>
-                            </div>
-                        </button>
                     </div>
                 </div>
 
@@ -362,6 +258,7 @@
             <img class="menu_bg_img" src="./picture/menu/menu_bg.png" alt="">
 
         </section>
+
         <!-- 最新消息 -->
         <section id="news">
 
@@ -504,6 +401,7 @@
 
             </div>
         </section>
+
     </main>
 
     <footer>
@@ -520,6 +418,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.0.4/lib/L2Dwidget.min.js"></script>
 
+    <!-- 滑鼠 -->
 
     <!-- banner-swiper -->
     <script>
@@ -527,7 +426,7 @@
             lazy: true,
             spaceBetween: 30,
             effect: "fade",
-
+            // followFinger: false,
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
@@ -543,6 +442,7 @@
         });
 
     </script>
+
     <!-- 成員介紹 -->
     <script>
         let direction = document.querySelector('.direction');
@@ -560,12 +460,11 @@
         let dogg_3 = document.querySelector('.dogg_3');
         let dogg_4 = document.querySelector('.dogg_4');
         let dogg_5 = document.querySelector('.dogg_5');
-        let dogg_6 = document.querySelector('.dogg_6');
+        // let dogg_6 = document.querySelector('.dogg_6');
 
         let dogg = document.querySelectorAll('.dogg');
 
         let pp = 0;
-
 
         dog1.addEventListener('click', function () {
             pp = 1;
@@ -587,10 +486,10 @@
             pp = 5;
             switchPP();
         })
-        dog6.addEventListener('click', function () {
-            pp = 6;
-            switchPP();
-        })
+        // dog6.addEventListener('click', function () {
+        //     pp = 6;
+        //     switchPP();
+        // })
 
         function switchPP() {
             switch (pp) {
@@ -649,11 +548,6 @@
             });
         }
 
-
-
-
-
-
     </script>
 
     <!-- 菜單區 -->
@@ -691,6 +585,7 @@
             }
         };
     </script>
+
     <!-- 彈出 -->
     <script>
         function openModal() {
@@ -731,30 +626,8 @@
         }
     </script>
 
-
     <!-- 新聞區 -->
-    <script>
-        var swiper_news = new Swiper(".mySwiper2", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            slidesPerGroup: 3,
-            loop: true,
-            loopFillGroupWithBlank: true,
-            // autoplay: {
-            //     delay: 2500,
-            //     disableOnInteraction: false,
-            // },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
-    <!-- 滑鼠 -->
+
     <script>
         //滑鼠點擊Class
         const cursor = document.querySelector('.cucursor');
@@ -855,8 +728,6 @@
 
             pictureChang();
 
-
-
             switch (pictureNum) {
                 case 1:
                     //设置图片的路径,根据不同的路径就可以更改成不同的样式
@@ -918,8 +789,6 @@
             //
             // testDiv.appendChild(styleImg);
 
-
-
             // z++;
             // /*在function內會傳入我們監聽的滑鼠物件，
             //   我們可以從這個物件中取得我們要的資料：
@@ -950,46 +819,18 @@
                 // 使用 clearInterval() 来停止执行setInterval函数
                 // clearInterval(time);
                 // 删除创建的标签
-
-
-
-
                 testDiv.removeChild(styleImg);
             }, 3900)
-
-
-
-
-
-
         }
-
-
-
-
-
-
-
-
-
-
-
-
 
     // document.addEventListener('mousedown', e => {
     //     window.setTimeout(timefunction,6000);
     //     // for第一次動作
     //     cursor.classList.add('start');
 
-
     //     cursor.setAttribute("style", "width: 200px;" + "height: 200px;" + "top:" + (e.pageY - 210) + "px;" + "left:" + (e.pageX + 30) + "px;");
 
     // });
-
-
-
-
-
     </script>
 </body>
 
