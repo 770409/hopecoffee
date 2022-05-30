@@ -48,7 +48,47 @@ $desktop: 1024px;
         }
     }
 }
+.style-opacity{
+    // transition: 1s;
+    // opacity: 0;
+    animation: styOp .5s linear 3s;
+    z-index: 100001;
+}
+@keyframes styOp {
+    0% {
+        opacity: 1;
 
+    }
+
+    100% {
+        opacity: 0;
+
+    }
+}
+
+@keyframes cursorAnima {
+    0% {
+        opacity: 0;
+
+    }
+
+    25%{
+        opacity: 1;
+
+    }
+    100% {
+        opacity: 1;
+
+    }
+}
+.cucursor_icon{
+    z-index: 100000;
+    // background-image: url(../img/4.jfif);
+    // background-size: cover;
+    border-radius: 50%;
+    font-size: 20px;
+    position: absolute;
+}
 html {
 
     // *,
@@ -70,6 +110,7 @@ p {
 }
 
 body {
+    cursor: none;
     margin: 0px;
     padding: 0px;
     position: relative;
@@ -86,7 +127,7 @@ body {
 }
 
 #burger-menu-checkbox {
-    z-index: 9999999999;
+    z-index: 10005;
     position: absolute;
     left: -9999px;
     position: fixed;

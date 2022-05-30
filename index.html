@@ -318,7 +318,7 @@
                         <li>茶飲、果汁....</li>
                     </ul>
 
-                    <button class="menu_button" onclick="openModal();currentSlide(1)"  class="hover-shadow cursor">
+                    <button class="menu_button" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
                         <span>查看菜單</span>
                         <img class="menu_btn_img" src="./picture/menu/狗碗.png" alt="">
                     </button>
@@ -511,12 +511,14 @@
 
 
     </footer>
-
+    <div class="cucursor"></div>
+    <div class="cucursor_icon">🥎</div>
     <!-- js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- swiper -->
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.0.4/lib/L2Dwidget.min.js"></script>
 
 
     <!-- banner-swiper -->
@@ -752,7 +754,243 @@
             },
         });
     </script>
+    <!-- 滑鼠 -->
+    <script>
+        //滑鼠點擊Class
+        const cursor = document.querySelector('.cucursor');
+        //游標圖片Class
+        const icon = document.querySelector('.cucursor_icon');
 
+
+        // testDiv.appendChild(styleImg);
+        // testDiv.style.overflow = 'hidden';
+
+        window.onload = function () {
+            // var arrIcon = ["RED","BLACK","BLUE","YELLOW"]
+            var arrIcon = ["🐕", "🐶", "🦮", "🦺"]
+            var num = 0;
+            function iconChang() {
+                num++;
+                if (num > arrIcon.length - 1) {
+                    num = 0;
+                }
+                icon.textContent = arrIcon[num];
+            }
+            setInterval(iconChang, 2000)
+        }
+
+
+        // function timefunction() {
+        //     cursor.style.display = "none";
+        // };
+
+        //游標移動區
+        document.addEventListener('mousemove', c => {
+            icon.setAttribute("style", "top:" + (c.pageY - 10) + "px;" + "left:" + (c.pageX - 10) + "px;");
+        })
+
+        //滑鼠點擊
+
+        //==========鼠标星球尾巴JS代码============
+
+        //========函数:获取当前鼠标的坐标=========
+        function getMousePosition(event) {
+            var x = 0;//x坐标
+            var y = 0;//y坐标
+            //documentElement 返回一个文档的文档元素。
+            doc = document.documentElement;
+            //body 返回文档的body元素
+            body = document.body;
+            //解决兼容性
+            if (!event) event = window.event;
+            //解决鼠标滚轮滚动后与相对坐标的差值
+            //pageYoffset是Netscape特有
+            if (window.pageYoffset) {
+                x = window.pageXOffset;
+                y = window.pageYOffset;
+            } else {//其他浏览器鼠标滚动
+                x = (doc && doc.scrollLeft || body && body.scrollLeft || 0)
+                    - (doc && doc.clientLeft || body && body.clientLeft || 0);
+                y = (doc && doc.scrollTop || body && body.scrollTop || 0)
+                    - (doc && doc.clientTop || body && body.clientTop || 0);
+            }
+            //得到的x加上当事件被触发时鼠标指针向对于浏览器页面（或客户区）的水平坐标
+            x += event.clientX;
+            //得到的x加上当事件被触发时鼠标指针向对于浏览器页面（或客户区）的垂直坐标
+            y += event.clientY;
+            //返回x和y
+            return { 'x': x, 'y': y };
+        }
+
+
+
+
+
+
+
+        // function randomNum(minNum, maxNum) {
+        //     switch (arguments.length) {
+        //         case 1:
+        //             return parseInt(Math.random() * minNum + 1, 10);
+        //         case 2:
+        //             return parseInt(Math.random() * (maxNum - minNum + 1) + minNum, 10);
+        //         default:
+        //             return 0;
+        //     }
+        // }
+
+        var pictureNum = 0;
+        function pictureChang() {
+            pictureNum++;
+            if (pictureNum > 5) {
+                pictureNum = 0;
+            }
+        }
+
+        // L2Dwidget.init();
+        // window.addEventListener('mousedown',(event) =>
+        document.onmousedown = function (event) {
+
+            var styleImg = document.createElement("div");
+
+            pictureChang();
+
+
+
+            switch (pictureNum) {
+                case 1:
+                    //设置图片的路径,根据不同的路径就可以更改成不同的样式
+
+                    styleImg.innerHTML = "<img src='./img/dog1.png' style='width: 50px;height: auto;'/>"
+                    // styleImg.classList.add('style-opacity');
+                    styleImg.classList.add('aniiii');
+                    setTimeout(function () {
+                        styleImg.classList.remove('aniiii');
+                    }, 400)
+                    break;
+                case 2:
+                    styleImg.innerHTML = "<img src='./img/dog2.png' style='width: 50px;height: auto;'/>"
+                    styleImg.classList.add('aniiii');
+                    setTimeout(function () {
+                        styleImg.classList.remove('aniiii');
+                    }, 400)
+                    break;
+                case 3:
+                    styleImg.innerHTML = "<img src='./img/dog3.png' style='width: 50px;height: auto;'/>"
+                    styleImg.classList.add('aniiii');
+                    setTimeout(function () {
+                        styleImg.classList.remove('aniiii');
+                    }, 400)
+                    break;
+                case 4:
+                    styleImg.innerHTML = "<img src='./img/dog4.png' style='width: 50px;height: auto;'/>"
+                    styleImg.classList.add('aniiii');
+                    setTimeout(function () {
+                        styleImg.classList.remove('aniiii');
+                    }, 400)
+                    break;
+                case 5:
+                    styleImg.innerHTML = "<img src='./img/dog5.png' style='width: 50px;height: auto;'/>"
+                    styleImg.classList.add('aniiii');
+                    setTimeout(function () {
+                        styleImg.classList.remove('aniiii');
+                    }, 400)
+                    break;
+
+            }
+
+            // 由于要设置动画，设置left 和top，因此，必须要设置定位
+            styleImg.style.position = 'absolute'
+            styleImg.classList.add('style-opacity');
+            // 设置标签的初始位置，即鼠标的当前位置
+            var x = getMousePosition(event).x;
+            var y = getMousePosition(event).y;
+            // 设置styleImg的坐标
+            styleImg.style.top = (y - 70) + "px";
+            styleImg.style.left = (x + 70) + "px";
+            //绑定testDiv为当前鼠标小尾巴生效的区域
+            var testDiv = document.querySelector("body");
+            // 将新建的标签加到页面的 body标签中
+            testDiv.appendChild(styleImg);
+            // 在文档中有超出的地方就会不显示，所以尽量绑定到页面的div中
+            // 设置溢出隐藏，为了防止鼠标在移动的过程中会触发上下滚动条
+            testDiv.style.overflow = 'hidden';
+            //
+            // testDiv.appendChild(styleImg);
+
+
+
+            // z++;
+            // /*在function內會傳入我們監聽的滑鼠物件，
+            //   我們可以從這個物件中取得我們要的資料：
+            //   x座標 event.pageX 及y座標 event.pageY
+            //   並把它印在console中*/
+            // console.log(`${event.pageX},${event.pageY}`);
+            // cursor.innerHTML +=
+            //     `
+            // <p id="Stamp-23" class="cursor-pointer cursor-stamp is-left" style="opacity: 1; transform: translate(${event.pageX+10}px,${event.pageY-50}px); z-index:${2000+z}">
+            // <i class="cursor-stamp-icon "
+            //     style="transform:translate(-50%, -50%); translate3d(0px, 0px, 0px) scale(0.1, 0.1); opacity: 1;">🥰</i>
+            // </p>
+            // `;
+
+            var count = 0;
+            // var count = 0;
+            //setInterval() 方法可按照指定的周期（以毫秒计）来调用函数或计算表达式
+            // var time = setInterval(function ()
+            // {
+            //     // 设置定时器 ，让每一次生成的标签在指定的周期内修改相应的透明度
+            //     count += 5;
+            //     styleImg.style.opacity = .5;
+            //     // styleImg.style.opacity = (100 - count) / 100;
+            // },500)
+            // setTimeout() 方法用于在指定的毫秒数后调用函数或计算表达式。
+            // 设置延时定时器， 在一定的时间后清除上面的定时器，让创建的标签不再进行变化
+            setTimeout(function () {
+                // 使用 clearInterval() 来停止执行setInterval函数
+                // clearInterval(time);
+                // 删除创建的标签
+
+
+
+
+                testDiv.removeChild(styleImg);
+            }, 3900)
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // document.addEventListener('mousedown', e => {
+    //     window.setTimeout(timefunction,6000);
+    //     // for第一次動作
+    //     cursor.classList.add('start');
+
+
+    //     cursor.setAttribute("style", "width: 200px;" + "height: 200px;" + "top:" + (e.pageY - 210) + "px;" + "left:" + (e.pageX + 30) + "px;");
+
+    // });
+
+
+
+
+
+    </script>
 </body>
 
 </html>

@@ -15,6 +15,61 @@
   list-style: none;
 }
 
+.style-opacity {
+  -webkit-animation: styOp .5s linear 3s;
+          animation: styOp .5s linear 3s;
+  z-index: 100001;
+}
+
+@-webkit-keyframes styOp {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes styOp {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes cursorAnima {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes cursorAnima {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.cucursor_icon {
+  z-index: 100000;
+  border-radius: 50%;
+  font-size: 20px;
+  position: absolute;
+}
+
 html *:before,
 html *:after {
   -webkit-box-sizing: inherit;
@@ -32,6 +87,7 @@ p {
 }
 
 body {
+  cursor: none;
   margin: 0px;
   padding: 0px;
   position: relative;
@@ -47,7 +103,7 @@ body {
 }
 
 #burger-menu-checkbox {
-  z-index: 9999999999;
+  z-index: 10005;
   position: absolute;
   left: -9999px;
   position: fixed;
