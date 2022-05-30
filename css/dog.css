@@ -82,7 +82,6 @@ p {
 }
 
 body {
-  cursor: none;
   margin: 0px;
   padding: 0px;
   position: relative;
@@ -1133,7 +1132,7 @@ main #menu .menu_right .menu_text button .menu_btn_img {
 main #menu .menu_right .menu_text .modal {
   display: none;
   position: fixed;
-  z-index: 99999999999999;
+  z-index: 9999999999;
   /* padding-top: 100px; */
   left: 0;
   top: 0;
@@ -1644,6 +1643,9 @@ footer .Copyright {
     padding: 35px 0 0 90px;
     align-self: none;
   }
+  main #menu .menu_right #myModal .modal-content {
+    width: 55%;
+  }
   main #menu .menu_right .menu_text ul {
     margin-bottom: 40px;
   }
@@ -1964,6 +1966,10 @@ footer .Copyright {
   }
   main #menu .menu_bg_img {
     width: 300px;
+  }
+  main #menu .menu_right #myModal .modal-content {
+    margin-top: 175px;
+    width: 70%;
   }
   main #contact_us .container {
     width: 100%;
@@ -2727,6 +2733,9 @@ footer .Copyright {
   }
   main #members_introduction .container .members_introduction_main .members_introduction_main_title .dog_right {
     bottom: 35px;
+  }
+  main #menu .menu_right #myModal .modal-content {
+    width: 80%;
   }
   main #menu .menu_right .menu_text h1 {
     font-size: 34px;
