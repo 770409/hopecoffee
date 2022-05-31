@@ -846,6 +846,7 @@ main #news .container .news_show .cardBox .card1 p {
 }
 
 main #news .container .news_show .cardBox .card1 .more {
+  text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

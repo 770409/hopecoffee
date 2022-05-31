@@ -125,7 +125,7 @@ main {
 
                 // background-color: #7B7673;
                 width: 100%;
-                height: 400px;
+                height: 350px;
                 display: flex;
 
                 .box_contact_pic {
@@ -142,8 +142,8 @@ main {
                 }
 
                 .two {
-                    background-image: url(../img/1.jpg);
-                    background-position: top;
+                    background-image: url(../img/5.jpg);
+                    background-position: center;
                 }
 
                 .three {
@@ -158,18 +158,22 @@ main {
 
 
                 .box_contact_text {
+                    margin: auto 0;
                     width: 70%;
                     padding: 0 40px;
 
                     h2 {
                         margin: 0 0 25px 0;
-                        font-size: 34px;
+                        font-size: 20px;
                     }
-
+                    h3{
+                        font-size: 36px;
+                        font-weight: 100;
+                    }
                     p {
-                        font-size: 14px;
-                        letter-spacing: 10px;
-                        line-height: 25px;
+                        font-size: 16px;
+                        letter-spacing: 2px;
+                        line-height: 30px;
                     }
                 }
             }

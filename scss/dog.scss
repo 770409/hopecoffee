@@ -893,6 +893,7 @@ main {
                         }
 
                         .more {
+                            text-decoration:none;
                             display: flex;
                             margin-top: 20px;
                             position: absolute;
@@ -902,6 +903,7 @@ main {
                                 font-size: 16px;
                                 line-height: 50px;
                                 color: #796F61;
+                                
                             }
 
                             .more_p {
