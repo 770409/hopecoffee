@@ -232,7 +232,7 @@ nav .container .menu_main ul a li {
 nav .back_top {
   width: 80px;
   height: 80px;
-  background-image: url(../picture/information-picture/回到最上面.jpg);
+  background-image: url(../picture/GroupTop.png);
   background-size: cover;
   background-position: center;
   border-radius: 50%;
@@ -567,6 +567,19 @@ main #members_introduction .container .members_introduction_main .row .dog .dog_
   width: 160px;
   height: 160px;
   margin: 0 auto;
+}
+
+main #members_introduction .container .members_introduction_main .row .dog .dog_img .dog_img_box .dog6 {
+  width: 140px;
+  height: 140px;
+  background-color: #988870;
+  -webkit-box-shadow: 6.5px 6.5px #8b7759;
+          box-shadow: 6.5px 6.5px #8b7759;
+}
+
+main #members_introduction .container .members_introduction_main .row .dog .dog_img .dog_img_box .dog6:hover {
+  -webkit-box-shadow: 10px 10px rgba(139, 119, 89, 0);
+          box-shadow: 10px 10px rgba(139, 119, 89, 0);
 }
 
 main #menu {
