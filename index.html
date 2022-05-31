@@ -86,7 +86,7 @@
                         <!-- <div class=""></div> -->
                         <!-- <img src="./picture/banner2.jpg" alt=""> -->
                     </div>
-                    <div class="swiper-slide swiper-slide3" style="background-image: url(./picture/banner1.jpg);">
+                    <!-- <div class="swiper-slide swiper-slide3" style="background-image: url(./picture/banner1.jpg);"> -->
                         <!-- <div class=""></div> -->
                         <!-- <img src="./picture/banner1.jpg" alt=""> -->
                     </div>
@@ -100,7 +100,7 @@
                 <!-- 圖 -->
                 <div class="store_introduction_top">
                     <!-- 左 -->
-                    <div class="store_introduction_bg1">
+                    <div class="store_introduction_bg1" data-aos="flip-left" data-aos-once="ture">
                         <div class="store_introduction_word">
                             <h1>Store Introduction</h1>
                             <p>
@@ -112,7 +112,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="store_introduction_bg2">
+                    <div class="store_introduction_bg2" data-aos="flip-right" data-aos-once="ture">
                         <div class="store_introduction_youtube">
                             <iframe class="store_introduction_youtube_main"
                                 src="https://www.youtube.com/embed/oXNR6PlEa2A" title="YouTube video player"
@@ -181,26 +181,26 @@
                         <div class="dog">
                             <div class="dog_img">
                                 <div class="dog_img_box">
-                                    <img class="dogX dog1" src="./picture/member/dog1.png" alt="">
+                                    <img class="dogX dog1" data-aos="fade-down-right" data-aos-offset="200" data-aos-once="ture" src="./picture/member/dog1.png" alt="">
                                 </div>
                                 <div class="dog_img_box">
-                                    <img class="dogX dog2" src="./picture/member/dog2.png" alt="">
+                                    <img class="dogX dog2" data-aos="fade-down-right" data-aos-offset="200" data-aos-once="ture" src="./picture/member/dog2.png" alt="">
                                 </div>
 
                                 <div class="dog_img_box">
-                                    <img class="dogX dog3" src="./picture/member/dog3.png" alt="">
+                                    <img class="dogX dog3" data-aos="fade-down-right" data-aos-offset="200" data-aos-once="ture" src="./picture/member/dog3.png" alt="">
                                 </div>
 
-                                <div class="dog_img_box"><img class="dogX dog4" src="./picture/member/dog4.png" alt="">
+                                <div class="dog_img_box"><img class="dogX dog4" data-aos="fade-down-right" data-aos-offset="200" data-aos-once="ture" src="./picture/member/dog4.png" alt="">
                                 </div>
 
                                 <div class="dog_img_box">
-                                    <img class="dogX dog5" src="./picture/member/dog5.png" alt="">
+                                    <img class="dogX dog5" data-aos="fade-down-right" data-aos-offset="200" data-aos-once="ture" src="./picture/member/dog5.png" alt="">
                                 </div>
                                 <div class="dog_img_box doggg6">
                                     <a href="./members/members_page.html">
 
-                                        <img class="dogX dog6" src="./picture/member/dog2btn.png" alt="">
+                                        <img class="dogX dog6" data-aos="fade-down-right" data-aos-offset="200" data-aos-once="ture" src="./picture/member/dog2btn.png" alt="">
                                     </a>
                                 </div>
 
@@ -455,7 +455,7 @@
             effect: "fade",
             // followFinger: false,
             autoplay: {
-                delay: 2500,
+                delay: 3500,
                 disableOnInteraction: false,
             },
             navigation: {
@@ -653,7 +653,7 @@
         }
     </script>
 
-    <!-- 新聞區 -->
+    <!-- 游標區 -->
 
     <script>
         //滑鼠點擊Class
@@ -858,6 +858,10 @@
     //     cursor.setAttribute("style", "width: 200px;" + "height: 200px;" + "top:" + (e.pageY - 210) + "px;" + "left:" + (e.pageX + 30) + "px;");
 
     // });
+    </script>
+
+    <script>
+        AOS.init();
     </script>
 </body>
 

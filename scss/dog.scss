@@ -249,7 +249,7 @@ nav {
         background-size: cover;
         background-position: center;
         border-radius: 50%;
-        margin-top: 700px;
+        margin-top: 725px;
         margin-left: 90%;
     }
 }
@@ -293,13 +293,13 @@ main {
                     background-size: cover;
                 }
 
-                .swiper-slide3 {
-                    width: 100%;
-                    height: 100%;
+                // .swiper-slide3 {
+                //     width: 100%;
+                //     height: 100%;
 
-                    background-position: center;
-                    background-size: cover;
-                }
+                //     background-position: center;
+                //     background-size: cover;
+                // }
 
             }
         }
@@ -1819,6 +1819,13 @@ footer {
 }
 
 @media (max-width: 960px) {
+    nav{
+        a{
+            .back_top{
+                margin-left: 86%;
+            }
+        }
+    }
     main {
         #store_introduction {
             .container {
@@ -1976,7 +1983,13 @@ footer {
 
 
 @media (max-width: 768px) {
-
+    nav{
+        a{
+            .back_top{
+                margin-left: 82%;
+            }
+        }
+    }
     nav {
         .container {
             width: 100%;
@@ -2329,14 +2342,17 @@ footer {
                                         height: 120px;
 
                                     }
+                                    .dog6{
+                                        width: 100px;
+                                        height: 100px;
+                                        box-shadow: 5.5px 5.5px rgba(139, 119, 89, 1);
+                                    }
 
                                 }
                             }
                         }
 
-                        .btn-challenge {
-                            bottom: 100px;
-                        }
+                        
                     }
                 }
             }
@@ -2573,9 +2589,9 @@ footer {
 
 
         #members_introduction {
-
+height: 900px;
             .container {
-                height: 1000px;
+                // height: 1000px;
 
                 .members_introduction_main {
                     .members_introduction_main_title {
@@ -2800,6 +2816,13 @@ footer {
 }
 
 @media (max-width:550px) {
+    nav{
+        a{
+            .back_top{
+                margin-left: 77%;
+            }
+        }
+    }
     main {
         #store_introduction {
             height: 1150px;
@@ -3134,6 +3157,13 @@ footer {
 }
 
 @media (max-width:455px) {
+    nav{
+        a{
+            .back_top{
+                margin-left: 75%;
+            }
+        }
+    }
     main {
         #store_introduction {
             height: 1080px;
@@ -3195,7 +3225,7 @@ footer {
 
 
         #members_introduction {
-            height: 850px;
+            height: 740px;
 
             .container {
                 height: 100%;
@@ -3236,6 +3266,11 @@ footer {
                                     .dogX {
                                         width: 100px;
                                         height: 100px;
+                                    }
+                                    .dog6{
+                                        width: 80px;
+                                        height: 80px;
+                                        box-shadow: 5px 5px rgba(139, 119, 89, 1);
                                     }
                                 }
 
@@ -3358,6 +3393,13 @@ footer {
 }
 
 @media (max-width:425px) {
+    nav{
+        a{
+            .back_top{
+                margin-left: 73%;
+            }
+        }
+    }
     main {
         #members_introduction {
 

@@ -237,7 +237,7 @@ nav .back_top {
   background-size: cover;
   background-position: center;
   border-radius: 50%;
-  margin-top: 700px;
+  margin-top: 725px;
   margin-left: 90%;
 }
 
@@ -264,13 +264,6 @@ main #banner .swiper .swiper-wrapper .swiper-slide1 {
 }
 
 main #banner .swiper .swiper-wrapper .swiper-slide2 {
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-}
-
-main #banner .swiper .swiper-wrapper .swiper-slide3 {
   width: 100%;
   height: 100%;
   background-position: center;
@@ -1552,6 +1545,9 @@ footer .Copyright {
 }
 
 @media (max-width: 960px) {
+  nav a .back_top {
+    margin-left: 86%;
+  }
   main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word {
     padding: 140px 0 40px;
   }
@@ -1620,6 +1616,9 @@ footer .Copyright {
 }
 
 @media (max-width: 768px) {
+  nav a .back_top {
+    margin-left: 82%;
+  }
   nav .container {
     width: 100%;
     padding: 0px;
@@ -1811,8 +1810,11 @@ footer .Copyright {
     width: 120px;
     height: 120px;
   }
-  main #members_introduction .container .members_introduction_main .row .btn-challenge {
-    bottom: 100px;
+  main #members_introduction .container .members_introduction_main .row .dog .dog_img .dog_img_box .dog6 {
+    width: 100px;
+    height: 100px;
+    -webkit-box-shadow: 5.5px 5.5px #8b7759;
+            box-shadow: 5.5px 5.5px #8b7759;
   }
   main #news {
     height: 3600px;
@@ -1937,8 +1939,8 @@ footer .Copyright {
     width: 400px;
     height: 290px;
   }
-  main #members_introduction .container {
-    height: 1000px;
+  main #members_introduction {
+    height: 900px;
   }
   main #members_introduction .container .members_introduction_main .members_introduction_main_title p {
     font-size: 32px;
@@ -2072,6 +2074,9 @@ footer .Copyright {
 }
 
 @media (max-width: 550px) {
+  nav a .back_top {
+    margin-left: 77%;
+  }
   main #store_introduction {
     height: 1150px;
   }
@@ -2264,6 +2269,9 @@ footer .Copyright {
 }
 
 @media (max-width: 455px) {
+  nav a .back_top {
+    margin-left: 75%;
+  }
   main #store_introduction {
     height: 1080px;
   }
@@ -2309,7 +2317,7 @@ footer .Copyright {
     }
   }
   main #members_introduction {
-    height: 850px;
+    height: 740px;
   }
   main #members_introduction .container {
     height: 100%;
@@ -2344,6 +2352,12 @@ footer .Copyright {
   main #members_introduction .container .members_introduction_main .row .dog .dog_img .dog_img_box .dogX {
     width: 100px;
     height: 100px;
+  }
+  main #members_introduction .container .members_introduction_main .row .dog .dog_img .dog_img_box .dog6 {
+    width: 80px;
+    height: 80px;
+    -webkit-box-shadow: 5px 5px #8b7759;
+            box-shadow: 5px 5px #8b7759;
   }
   main #menu {
     height: 950px;
@@ -2406,6 +2420,9 @@ footer .Copyright {
 }
 
 @media (max-width: 425px) {
+  nav a .back_top {
+    margin-left: 73%;
+  }
   main #members_introduction .container {
     height: 1000px;
   }
