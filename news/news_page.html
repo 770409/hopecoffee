@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -19,19 +20,19 @@
 
         <div class="container">
             <div class="menu_bar"></div>
-            <a href="../index.html"><img class="logo" src="./svg/loog2.svg" alt=""></a>
+            <a href="../index.html"><img class="logo" src="./svg/loog2.svg" alt="" data-aos="zoom-in" data-aos-duration="3000" ></a>
             <div class="menu_main">
                 <ul>
-                    <a href="">
+                    <a href="" data-aos="flip-down" data-aos-duration="2000" data-aos-delay="1000">
                         <li>店家理念</li>
                     </a>
-                    <a href="">
+                    <a href="" data-aos="flip-down" data-aos-duration="2000" data-aos-delay="1500">
                         <li>美味菜單</li>
                     </a>
-                    <a href="">
+                    <a href="" data-aos="flip-down" data-aos-duration="2000" data-aos-delay="2000">
                         <li>最新消息</li>
                     </a>
-                    <a href="">
+                    <a href="" data-aos="flip-down" data-aos-duration="2000" data-aos-delay="2500">
                         <li>聯絡我們</li>
                     </a>
                 </ul>
@@ -48,8 +49,13 @@
                 <div class="box_header">
                     <h1>最新消息</h1>
                 </div>
+
                 <div class="box_contact">
-                    <div class="box_contact_pic one">
+                    <div class="box_contact_pic one" 
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1800"
+                    >
 
                     </div>
                     <div class="box_contact_text">
@@ -66,8 +72,14 @@
                 </div>
                 <br><br>
                 <hr><br><br>
+
                 <div class="box_contact">
-                    <div class="box_contact_pic two">
+                    <div class="box_contact_pic two"
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1800"
+                    data-aos-once="true"
+                    >
 
                     </div>
                     <div class="box_contact_text">
@@ -90,8 +102,14 @@
                 </div>
                 <br><br>
                 <hr><br><br>
+
                 <div class="box_contact">
-                    <div class="box_contact_pic three">
+                    <div class="box_contact_pic three"
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1800"
+                    data-aos-once="true"
+                    >
 
                     </div>
                     <div class="box_contact_text">
@@ -109,8 +127,14 @@
                 </div>
                 <br><br>
                 <hr><br><br>
+
                 <div class="box_contact">
-                    <div class="box_contact_pic four">
+                    <div class="box_contact_pic four"
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1800"
+                    data-aos-once="true"
+                    >
 
                     </div>
                     <div class="box_contact_text">
@@ -135,7 +159,11 @@
         </section>
 
         <section>
-            <div id="footer_box">
+            <div id="footer_box"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1000"
+            >
                 
                 <img src="./img/Group 164.png" alt="">
  
@@ -176,6 +204,10 @@
         });
 
     </script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
