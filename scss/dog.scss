@@ -144,7 +144,7 @@ $color-3: #988870;
 }
 
 html {
-
+    // overflow:auto;
     // *,
     *:before,
     *:after {
@@ -164,6 +164,7 @@ p {
 }
 
 body {
+    overflow: auto;
     // cursor: none;
     margin: 0px;
     padding: 0px;
