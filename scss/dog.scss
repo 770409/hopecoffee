@@ -198,11 +198,15 @@ nav {
 
         .menu_bar {
             display: none;
+            .menu{
+
+                a{
+                    height: calc(100% / 5);
+                    text-decoration:none;
+                }
+            }
         }
 
-        // .fa-solid {
-        //     display: none;
-        // }
 
         a {
             height: 80px;

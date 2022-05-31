@@ -186,6 +186,11 @@ nav .container .menu_bar {
   display: none;
 }
 
+nav .container .menu_bar .menu a {
+  height: calc(100% / 5);
+  text-decoration: none;
+}
+
 nav .container a {
   height: 80px;
 }
