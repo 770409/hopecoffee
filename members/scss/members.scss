@@ -40,11 +40,10 @@ nav {
     z-index: 10000;
     width: 100%;
     height: 80px;
-    // background-color: #fff;
     position: fixed;
 
     .container {
-        width: 80%;
+        width: 75%;
         height: 100%;
         display: flex;
         justify-content: space-between;
@@ -53,10 +52,13 @@ nav {
 
         .menu_bar {
             display: none;
-            width: 80px;
-            height: 80px;
-            background-color: rgb(230, 187, 187);
+            .menu{
 
+                a{
+                    height: calc(100% / 5);
+                    text-decoration:none;
+                }
+            }
         }
 
         a {
@@ -115,7 +117,7 @@ main {
                 padding-top: 80px;
 
                 h1 {
-                    
+
                     color: #988870;
                     font-size: 48px;
                     font-weight: 100;
@@ -214,12 +216,12 @@ footer {
     main {
         #box {
             .container {
-                .box_contact{
+                .box_contact {
 
                     .box_contact_pic {
                         width: 40%;
                     }
-    
+
                     .box_contact_text {
                         width: 55%;
                     }
@@ -229,17 +231,19 @@ footer {
 
     }
 }
+
 @media (max-width: 980px) {
     main {
         #box {
             .container {
                 width: 80%;
-                .box_contact{
+
+                .box_contact {
 
                     .box_contact_pic {
                         width: 40%;
                     }
-    
+
                     .box_contact_text {
                         width: 55%;
                     }
@@ -249,17 +253,104 @@ footer {
 
     }
 }
+
 @media (max-width: 768px) {
+
+    nav {
+        a {
+            .back_top {
+                margin-left: 82%;
+            }
+        }
+    }
+
+    nav {
+        .container {
+            width: 100%;
+            padding: 0px;
+
+            .menu_bar {
+                margin-top: 20px;
+                margin-left: 20px;
+
+                label {
+
+
+
+
+                    line-height: 50px;
+
+                    i {
+                        font-size: 38px;
+                    }
+                }
+
+                display: inline-block;
+
+                // ----------------------------
+                input {
+                    display: none;
+
+                }
+
+                input:checked~.menu {
+                    max-height: 300px;
+                }
+
+                .menu {
+                    clear: both;
+                    background: #fff;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: .5s;
+                    margin-left: -20px;
+
+                    li {
+                        text-align: center;
+                        border-bottom: 1px solid #efefef;
+                        width: 100vw;
+
+                        a {
+                            display: block;
+                            padding: 10px 0;
+                            font-size: 18px;
+                            color: #5d5d5d;
+
+                            &:hover {
+                                background: #5d5d5d;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+
+            a {
+                .logo {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+            .menu_main {
+                display: none;
+            }
+        }
+    }
+
     main {
         #box {
             .container {
                 width: 80%;
-                .box_contact{
+
+                .box_contact {
                     height: 300px;
+
                     .box_contact_pic {
                         width: 40%;
                     }
-    
+
                     .box_contact_text {
                         width: 55%;
                     }
@@ -269,24 +360,28 @@ footer {
 
     }
 }
+
 @media (max-width: 700px) {
     main {
         #box {
             .container {
                 width: 80%;
-                .box_contact{
+
+                .box_contact {
                     height: 270px;
+
                     .box_contact_pic {
                         width: 40%;
                     }
-    
+
                     .box_contact_text {
                         width: 55%;
+
                         h2 {
                             margin: 0 0 25px 0;
                             font-size: 30px;
                         }
-    
+
                         p {
                             font-size: 14px;
                             letter-spacing: 2px;
@@ -299,24 +394,28 @@ footer {
 
     }
 }
+
 @media (max-width: 555px) {
     main {
         #box {
             .container {
                 width: 80%;
-                .box_contact{
+
+                .box_contact {
                     height: 270px;
+
                     .box_contact_pic {
                         width: 40%;
                     }
-    
+
                     .box_contact_text {
                         width: 55%;
+
                         h2 {
                             margin: 0 0 15px 0;
                             font-size: 26px;
                         }
-    
+
                         p {
                             font-size: 14px;
                             letter-spacing: 2px;
@@ -329,27 +428,31 @@ footer {
 
     }
 }
+
 @media (max-width: 495px) {
     main {
         #box {
             .container {
                 width: 80%;
-                .box_contact{
+
+                .box_contact {
                     // justify-content: unset;
                     flex-direction: column;
                     height: 500px;
+
                     .box_contact_pic {
                         width: 100%;
                         height: 400px;
                     }
-    
+
                     .box_contact_text {
                         width: 100%;
+
                         h2 {
                             margin: 15px 0 15px 0;
                             font-size: 26px;
                         }
-    
+
                         p {
                             font-size: 14px;
                             letter-spacing: 1px;
