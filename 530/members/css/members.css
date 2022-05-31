@@ -29,7 +29,7 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -177,21 +177,23 @@ main #footer_box {
   display: flex;
   height: 300px;
   background-color: #EFECE7;
-  position: relative;
-  padding: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
-main #footer_box .footer_box_img {
-  position: absolute;
-  bottom: 0px;
-  margin: 0px 25%;
+main #footer_box img {
+  height: 200px;
 }
 
 footer .Copyright {
   color: #7B7673;
   text-align: center;
   letter-spacing: 5px;
-  padding: 0 20px 20px 0;
-  font-size: 14px;
+  padding: 10px 0;
+  font-size: 12px;
 }
 /*# sourceMappingURL=members.css.map */

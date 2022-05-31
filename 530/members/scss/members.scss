@@ -32,7 +32,7 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -173,25 +173,22 @@ main {
         display: flex;
         height: 300px;
         background-color: #EFECE7;
-        position: relative;
-        padding: 60px;
-
-        .footer_box_img {
-            position: absolute;
-            bottom: 0px;
-            margin: 0px 25%;
+        justify-content: center;
+        align-items: flex-end;
+        img {
+            height: 200px;
         }
     }
 
 }
-footer{
+footer {
 
     .Copyright {
         // width: 100%;
         color: #7B7673;
         text-align: center;
         letter-spacing: 5px;
-        padding: 0 20px 20px 0;
-        font-size: 14px;
+        padding: 10px 0;
+        font-size: 12px;
     }
 }
