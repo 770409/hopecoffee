@@ -431,8 +431,13 @@
 
 
 
-    <div class="cucursor"></div>
-    <div class="cucursor_icon">🥎</div>
+
+        <div class="cucursor">
+
+            <div class="cucursor_icon">🥎</div>
+        </div>
+
+
     <!-- js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- swiper -->
@@ -804,7 +809,7 @@
             //绑定testDiv为当前鼠标小尾巴生效的区域
             var testDiv = document.querySelector("body");
             // 将新建的标签加到页面的 body标签中
-            testDiv.appendChild(styleImg);
+            cursor.appendChild(styleImg);
             // 在文档中有超出的地方就会不显示，所以尽量绑定到页面的div中
             // 设置溢出隐藏，为了防止鼠标在移动的过程中会触发上下滚动条
             // testDiv.style.overflow = 'hidden';
@@ -841,7 +846,7 @@
                 // 使用 clearInterval() 来停止执行setInterval函数
                 // clearInterval(time);
                 // 删除创建的标签
-                testDiv.removeChild(styleImg);
+                cursor.removeChild(styleImg);
             }, 3900)
         }
 
