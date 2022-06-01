@@ -357,6 +357,12 @@ footer {
                 }
             }
         }
+        #footer_box{
+            height: 220px;
+            img{
+                height: 140px;
+            }
+        }
 
     }
 }
@@ -425,7 +431,20 @@ footer {
                 }
             }
         }
+        #footer_box{
+            height: 160px;
+            img{
+                height: 90px;
+            }
+        }
 
+    }
+    footer{
+        
+        .Copyright{
+            letter-spacing: 0px;
+            font-size: 10px;
+        }
     }
 }
 

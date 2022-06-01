@@ -293,6 +293,12 @@ footer .Copyright {
   main #box .container .box_contact .box_contact_text {
     width: 55%;
   }
+  main #footer_box {
+    height: 220px;
+  }
+  main #footer_box img {
+    height: 140px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -340,6 +346,16 @@ footer .Copyright {
     font-size: 14px;
     letter-spacing: 2px;
     line-height: 25px;
+  }
+  main #footer_box {
+    height: 160px;
+  }
+  main #footer_box img {
+    height: 90px;
+  }
+  footer .Copyright {
+    letter-spacing: 0px;
+    font-size: 10px;
   }
 }
 
