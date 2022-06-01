@@ -35,7 +35,7 @@ $color-3: #988870;
 * {
     box-sizing: border-box;
     list-style: none;
-
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 
@@ -144,6 +144,7 @@ $color-3: #988870;
 }
 
 html {
+
     // overflow:auto;
     // *,
     *:before,
@@ -164,7 +165,7 @@ p {
 }
 
 body {
-    
+
     cursor: none;
     margin: 0px;
     padding: 0px;
@@ -181,6 +182,7 @@ body {
 .navcc {
     background-color: rgb(255, 255, 255);
 }
+
 
 nav {
     z-index: 10000;
@@ -200,11 +202,12 @@ nav {
 
         .menu_bar {
             display: none;
-            .menu{
 
-                a{
+            .menu {
+
+                a {
                     height: calc(100% / 5);
-                    text-decoration:none;
+                    text-decoration: none;
                 }
             }
         }
@@ -590,7 +593,7 @@ main {
                             position: absolute;
                             right: 0px;
                             height: 100%;
-                            
+
                             .dog_img_box {
                                 width: 50%;
                                 display: flex;
@@ -603,17 +606,19 @@ main {
                                     height: 160px;
                                     margin: 0 auto;
                                 }
-                                .dog6{
+
+                                .dog6 {
                                     width: 140px;
                                     height: 140px;
                                     background-color: #988870;
                                     box-shadow: 6.5px 6.5px rgba(139, 119, 89, 1);
-                                    &:hover{
+
+                                    &:hover {
                                         box-shadow: 10px 10px rgba(139, 119, 89, 0);
                                     }
                                 }
                             }
-                            
+
                         }
                     }
                 }
@@ -905,7 +910,7 @@ main {
                         }
 
                         .more {
-                            text-decoration:none;
+                            text-decoration: none;
                             display: flex;
                             margin-top: 20px;
                             position: absolute;
@@ -915,7 +920,7 @@ main {
                                 font-size: 16px;
                                 line-height: 50px;
                                 color: #796F61;
-                                
+
                             }
 
                             .more_p {
@@ -1207,7 +1212,7 @@ main {
                     flex-direction: column;
                     justify-content: space-between;
                     align-items: center;
-                    
+
                 }
 
             }
@@ -1819,13 +1824,15 @@ footer {
 }
 
 @media (max-width: 960px) {
-    nav{
-        a{
-            .back_top{
+    nav {
+        a {
+            .back_top {
+                // margin-top: ;
                 margin-left: 86%;
             }
         }
     }
+
     main {
         #store_introduction {
             .container {
@@ -1983,13 +1990,14 @@ footer {
 
 
 @media (max-width: 768px) {
-    nav{
-        a{
-            .back_top{
+    nav {
+        a {
+            .back_top {
                 margin-left: 82%;
             }
         }
     }
+
     nav {
         .container {
             width: 100%;
@@ -1998,6 +2006,7 @@ footer {
             .menu_bar {
                 margin-top: 20px;
                 margin-left: 20px;
+
                 label {
 
 
@@ -2029,11 +2038,12 @@ footer {
                     overflow: hidden;
                     transition: .5s;
                     margin-left: -20px;
+
                     li {
                         text-align: center;
                         border-bottom: 1px solid #efefef;
                         width: 100vw;
-                        
+
                         a {
                             display: block;
                             padding: 10px 0;
@@ -2342,7 +2352,8 @@ footer {
                                         height: 120px;
 
                                     }
-                                    .dog6{
+
+                                    .dog6 {
                                         width: 100px;
                                         height: 100px;
                                         box-shadow: 5.5px 5.5px rgba(139, 119, 89, 1);
@@ -2352,7 +2363,7 @@ footer {
                             }
                         }
 
-                        
+
                     }
                 }
             }
@@ -2589,7 +2600,8 @@ footer {
 
 
         #members_introduction {
-height: 900px;
+            height: 900px;
+
             .container {
                 // height: 1000px;
 
@@ -2816,13 +2828,14 @@ height: 900px;
 }
 
 @media (max-width:550px) {
-    nav{
-        a{
-            .back_top{
+    nav {
+        a {
+            .back_top {
                 margin-left: 77%;
             }
         }
     }
+
     main {
         #store_introduction {
             height: 1150px;
@@ -3157,13 +3170,15 @@ height: 900px;
 }
 
 @media (max-width:455px) {
-    nav{
-        a{
-            .back_top{
+    nav {
+        a {
+            .back_top {
+                margin-top: 550px;
                 margin-left: 75%;
             }
         }
     }
+
     main {
         #store_introduction {
             height: 1080px;
@@ -3267,7 +3282,8 @@ height: 900px;
                                         width: 100px;
                                         height: 100px;
                                     }
-                                    .dog6{
+
+                                    .dog6 {
                                         width: 80px;
                                         height: 80px;
                                         box-shadow: 5px 5px rgba(139, 119, 89, 1);
@@ -3393,13 +3409,15 @@ height: 900px;
 }
 
 @media (max-width:425px) {
-    nav{
-        a{
-            .back_top{
-                margin-left: 73%;
+    nav {
+        a {
+            .back_top {
+                margin-top: 520px;
+                margin-left: 68%;
             }
         }
     }
+
     main {
         #members_introduction {
 
@@ -3565,6 +3583,14 @@ height: 900px;
 }
 
 @media (max-width:375px) {
+    nav {
+        a {
+            .back_top {
+                margin-top: 500px;
+                margin-left: 60%;
+            }
+        }
+    }
     main {
         #store_introduction {
             height: 840px;

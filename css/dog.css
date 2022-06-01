@@ -13,6 +13,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   list-style: none;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 .cucursor {
@@ -2270,6 +2271,7 @@ footer .Copyright {
 
 @media (max-width: 455px) {
   nav a .back_top {
+    margin-top: 550px;
     margin-left: 75%;
   }
   main #store_introduction {
@@ -2421,7 +2423,8 @@ footer .Copyright {
 
 @media (max-width: 425px) {
   nav a .back_top {
-    margin-left: 73%;
+    margin-top: 520px;
+    margin-left: 68%;
   }
   main #members_introduction .container {
     height: 1000px;
@@ -2513,6 +2516,10 @@ footer .Copyright {
 }
 
 @media (max-width: 375px) {
+  nav a .back_top {
+    margin-top: 500px;
+    margin-left: 60%;
+  }
   main #store_introduction {
     height: 840px;
   }
