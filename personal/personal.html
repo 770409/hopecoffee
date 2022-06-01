@@ -10,29 +10,29 @@
 </head>
 
 <body>
-    <section>
+    <section id="box">
         
+        <div class="personal">
+    
+            <h1>Reservation</h1>
+            <div class="name_box">
+                <label for="name">名字</label><br>
+                <input class="number" type="text"><br>
+            </div>
+            
+            <div class="phone_box">
+                <label for="phone">電話</label><br>
+                <input class="phone" type="phone"><br>
+            </div>
+    
+            <div class="day_box">
+                <label for="birthdaytime">日期與時間:</label>
+                <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+            </div>
+            
+            <button class="enter">確認</button>
+        </div>
     </section>
-    <div class="personal">
-
-        <h1>Reservation</h1>
-        <div class="name_box">
-            <label for="name">名字</label><br>
-            <input class="number" type="text"><br>
-        </div>
-        
-        <div class="phone_box">
-            <label for="phone">電話</label><br>
-            <input class="phone" type="phone"><br>
-        </div>
-
-        <div class="day_box">
-            <label for="birthdaytime">日期與時間:</label>
-            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
-        </div>
-        
-        <button class="enter">確認</button>
-    </div>
 
     <script>
         var enter = document.querySelector('.enter');
