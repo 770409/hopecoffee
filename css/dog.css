@@ -164,6 +164,24 @@ body {
   background-color: white;
 }
 
+.back_top_btn {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  z-index: 9999;
+}
+
+.back_top_btn .back_top {
+  width: 80px;
+  height: 80px;
+  background-image: url(../picture/GroupTop.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
 nav {
   z-index: 10000;
   width: 100%;
@@ -229,17 +247,6 @@ nav .container .menu_main ul a {
 nav .container .menu_main ul a li {
   margin: 0 15px;
   color: #000;
-}
-
-nav .back_top {
-  width: 80px;
-  height: 80px;
-  background-image: url(../picture/GroupTop.png);
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
-  margin-top: 725px;
-  margin-left: 90%;
 }
 
 main #banner {
@@ -1546,9 +1553,6 @@ footer .Copyright {
 }
 
 @media (max-width: 960px) {
-  nav a .back_top {
-    margin-left: 86%;
-  }
   main #store_introduction .container .store_introduction_top .store_introduction_bg1 .store_introduction_word {
     padding: 140px 0 40px;
   }
@@ -1617,9 +1621,6 @@ footer .Copyright {
 }
 
 @media (max-width: 768px) {
-  nav a .back_top {
-    margin-left: 82%;
-  }
   nav .container {
     width: 100%;
     padding: 0px;
@@ -2075,9 +2076,6 @@ footer .Copyright {
 }
 
 @media (max-width: 550px) {
-  nav a .back_top {
-    margin-left: 77%;
-  }
   main #store_introduction {
     height: 1150px;
   }
@@ -2270,10 +2268,6 @@ footer .Copyright {
 }
 
 @media (max-width: 455px) {
-  nav a .back_top {
-    margin-top: 550px;
-    margin-left: 75%;
-  }
   main #store_introduction {
     height: 1080px;
   }
@@ -2422,10 +2416,6 @@ footer .Copyright {
 }
 
 @media (max-width: 425px) {
-  nav a .back_top {
-    margin-top: 520px;
-    margin-left: 68%;
-  }
   main #members_introduction .container {
     height: 1000px;
   }
@@ -2516,10 +2506,6 @@ footer .Copyright {
 }
 
 @media (max-width: 375px) {
-  nav a .back_top {
-    margin-top: 500px;
-    margin-left: 60%;
-  }
   main #store_introduction {
     height: 840px;
   }

@@ -182,8 +182,23 @@ body {
 .navcc {
     background-color: rgb(255, 255, 255);
 }
+.back_top_btn{
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 9999;
+    .back_top {
+        width: 80px;
+        height: 80px;
+        background-image: url(../picture/GroupTop.png);
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
 
-
+    }
+}
 nav {
     z-index: 10000;
     width: 100%;
@@ -245,16 +260,16 @@ nav {
         }
     }
 
-    .back_top {
-        width: 80px;
-        height: 80px;
-        background-image: url(../picture/GroupTop.png);
-        background-size: cover;
-        background-position: center;
-        border-radius: 50%;
-        margin-top: 725px;
-        margin-left: 90%;
-    }
+    // .back_top {
+    //     width: 80px;
+    //     height: 80px;
+    //     background-image: url(../picture/GroupTop.png);
+    //     background-size: cover;
+    //     background-position: center;
+    //     border-radius: 50%;
+    //     margin-top: 725px;
+    //     margin-left: 90%;
+    // }
 }
 
 
@@ -1824,14 +1839,14 @@ footer {
 }
 
 @media (max-width: 960px) {
-    nav {
-        a {
-            .back_top {
-                // margin-top: ;
-                margin-left: 86%;
-            }
-        }
-    }
+    // nav {
+    //     a {
+    //         .back_top {
+    //             // margin-top: ;
+    //             margin-left: 86%;
+    //         }
+    //     }
+    // }
 
     main {
         #store_introduction {
@@ -1990,13 +2005,13 @@ footer {
 
 
 @media (max-width: 768px) {
-    nav {
-        a {
-            .back_top {
-                margin-left: 82%;
-            }
-        }
-    }
+    // nav {
+    //     a {
+    //         .back_top {
+    //             margin-left: 82%;
+    //         }
+    //     }
+    // }
 
     nav {
         .container {
@@ -2828,13 +2843,13 @@ footer {
 }
 
 @media (max-width:550px) {
-    nav {
-        a {
-            .back_top {
-                margin-left: 77%;
-            }
-        }
-    }
+    // nav {
+    //     a {
+    //         .back_top {
+    //             margin-left: 77%;
+    //         }
+    //     }
+    // }
 
     main {
         #store_introduction {
@@ -3171,12 +3186,12 @@ footer {
 
 @media (max-width:455px) {
     nav {
-        a {
-            .back_top {
-                margin-top: 550px;
-                margin-left: 75%;
-            }
-        }
+        // a {
+        //     .back_top {
+        //         margin-top: 550px;
+        //         margin-left: 75%;
+        //     }
+        // }
     }
 
     main {
@@ -3410,12 +3425,12 @@ footer {
 
 @media (max-width:425px) {
     nav {
-        a {
-            .back_top {
-                margin-top: 520px;
-                margin-left: 68%;
-            }
-        }
+        // a {
+        //     .back_top {
+        //         margin-top: 520px;
+        //         margin-left: 68%;
+        //     }
+        // }
     }
 
     main {
@@ -3584,12 +3599,12 @@ footer {
 
 @media (max-width:375px) {
     nav {
-        a {
-            .back_top {
-                margin-top: 500px;
-                margin-left: 60%;
-            }
-        }
+        // a {
+        //     .back_top {
+        //         margin-top: 500px;
+        //         margin-left: 60%;
+        //     }
+        // }
     }
     main {
         #store_introduction {
