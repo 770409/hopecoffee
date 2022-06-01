@@ -583,12 +583,12 @@ main #menu {
   height: 969px;
   background-color: #EFECE7;
   position: relative;
-  padding-top: 50px;
+  padding-top: 80px;
 }
 
 main #menu #img_box {
   width: 60%;
-  height: 80%;
+  height: 90%;
   position: relative;
   overflow: hidden;
   background-image: url(../picture/灰熊雞腿.jpg);
