@@ -803,7 +803,6 @@ main #menu .menu_bg_img {
 }
 
 main #news {
-  overflow: hidden;
   position: relative;
   height: calc(100vh + 800px);
   background-color: #F0ECEA;
