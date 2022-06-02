@@ -826,7 +826,6 @@ main #menu .menu_bg_img {
 }
 
 main #news {
-  overflow-x: hidden;
   position: relative;
   height: calc(100vh + 800px);
   background-color: #F0ECEA;
@@ -861,6 +860,7 @@ main #news .container .news_show .cardBox {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 38px;
+  overflow: hidden;
 }
 
 main #news .container .news_show .cardBox .card1 {
