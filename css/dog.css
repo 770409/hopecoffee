@@ -393,6 +393,7 @@ main #store_introduction .container .store_introduction_down .grass4 {
 main #members_introduction {
   padding-top: 80px;
   background-color: #E4D8CB;
+  overflow: hidden;
 }
 
 main #members_introduction .container {
@@ -592,6 +593,7 @@ main #menu {
   background-color: #EFECE7;
   position: relative;
   padding-top: 80px;
+  overflow: hidden;
 }
 
 main #menu #img_box {
@@ -968,6 +970,7 @@ main #contact_us {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 
 main #contact_us .container {

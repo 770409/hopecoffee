@@ -452,7 +452,7 @@ main {
         // height: calc(100vh - 80px);
         padding-top: 80px;
         background-color: #E4D8CB;
-
+        overflow: hidden;
         .container {
             position: relative;
 
@@ -651,7 +651,7 @@ main {
         background-color: #EFECE7;
         position: relative;
         padding-top: 80px;
-
+        overflow: hidden;
         #img_box {
             width: 60%;
             height: 90%;
@@ -1044,7 +1044,7 @@ main {
         justify-content: center;
         align-items: center;
 
-
+        overflow: hidden;
 
         .container {
             position: relative;
