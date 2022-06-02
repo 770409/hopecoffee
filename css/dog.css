@@ -678,6 +678,16 @@ main #menu .menu_right .menu_text button .menu_btn_img {
   height: 65px;
 }
 
+main #menu .menu_right .menu_text button .hover-shadow {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main #menu .menu_right .menu_text button .hover-shadow:hover {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 main #menu .menu_right .menu_text .modal {
   display: none;
   position: fixed;
@@ -796,6 +806,19 @@ main #menu .menu_right .menu_text .modal .modal-content .caption-container {
   color: white;
 }
 
+main #menu .menu_right .menu_text .modal .modal-content .column {
+  float: left;
+  width: 25%;
+}
+
+main #menu .menu_right .menu_text .modal .modal-content .column .demo {
+  opacity: 0.6;
+}
+
+main #menu .menu_right .menu_text .modal .modal-content .column .demo:hover {
+  opacity: 1;
+}
+
 main #menu .menu_bg_img {
   position: absolute;
   right: 0px;
@@ -803,6 +826,7 @@ main #menu .menu_bg_img {
 }
 
 main #news {
+  overflow-x: hidden;
   position: relative;
   height: calc(100vh + 800px);
   background-color: #F0ECEA;
